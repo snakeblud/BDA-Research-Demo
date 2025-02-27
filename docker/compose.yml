@@ -1,0 +1,150 @@
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.2
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.5.2
+    depends_on:
+      - zookeeper
+    ports:
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    depends_on:
+      - kafka
+    ports:
+      - "8090:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+
+  schema-registry:
+    image: confluentinc/cp-schema-registry:6.2.0
+    hostname: schema-registry
+    container_name: schema-registry
+    depends_on:
+      - kafka
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: kafka:9092
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
+
+  # debezium connector
+  kafka-connect:
+    image: confluentinc/cp-kafka-connect-base:7.8.0
+    hostname: kafka-connect
+    container_name: kafka-connect
+    ports:
+      - 8083:8083
+    depends_on:
+      - kafka
+      - zookeeper
+      - transactions-database
+    env_file:
+      - .env
+    volumes:
+      - ./debezium/create_connector.sh:/etc/confluent/create_connector.sh
+    entrypoint:
+      - bash
+      - -c
+      - |
+        echo "Installing connector plugins"
+        confluent-hub install --no-prompt debezium/debezium-connector-postgresql:2.5.4
+        
+        echo "Launching Kafka Connect worker"
+        /etc/confluent/docker/run & 
+        
+        cd /etc/confluent
+        
+        chmod +x create_connector.sh
+        ./create_connector.sh
+        
+        sleep infinity
+
+#  hazelcast-node:
+#    image: hazelcast/hazelcast:5.5.0-jdk21
+#    container_name: hazelcast-node
+#    environment:
+#      HZ_NETWORK_PUBLICADDRESS: hazelcast-node:5701
+#      HZ_CLUSTERNAME: analytics-cluster
+#    ports:
+#      - "5701:5701"
+#    networks:
+#      - hazelcast
+#      - default
+
+  hazelcast-kafka:
+    build: HazelcastKafkaSink
+    container_name: hazelcast-kafka
+    environment:
+      HZ_NETWORK_PUBLICADDRESS: hazelcast-kafka:5701
+      HZ_CLUSTERNAME: analytics-cluster
+    volumes:
+      - hazelcast-kafka-gradle-cache:/root/.gradle
+    networks:
+      - hazelcast
+      - default
+
+  hazelcast-dashboard:
+    image: hazelcast/management-center:5.7.1
+    container_name: hazelcast-management-center
+    environment:
+#      MC_DEFAULT_CLUSTER_MEMBERS: hazelcast-node:5701,hazelcast-kafka:5701
+      MC_DEFAULT_CLUSTER_MEMBERS: hazelcast-kafka:5701
+      MC_DEFAULT_CLUSTER: analytics-cluster
+      JAVA_OPTS: -Dhazelcast.logging.level=DEBUG
+    ports:
+      - "8080:8080"
+    networks:
+      - hazelcast
+      - default
+
+  transactions-database:
+    build: databases/transactions
+    container_name: transactions-database
+    volumes:
+      - user-data:/var/lib/mysql
+    restart: always
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U auth_user -d transactions" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    command: |
+      postgres -c wal_level=logical
+
+# psql -h transactions-database -p 5432 -U auth_user -d transactions
+# gE1-ChHCucqk3CVxoCzZ
+# insert into roles (role_name) values ('tester');
+# SELECT relname, relreplident FROM pg_class WHERE relname = 'roles';
+# ALTER TABLE roles ADD COLUMN transaction_time TIMESTAMP DEFAULT transaction_timestamp();
+
+networks:
+  hazelcast:
+    driver: bridge
+
+volumes:
+  user-data:
+    driver: local
+  hazelcast-kafka-gradle-cache:
+    driver: local
