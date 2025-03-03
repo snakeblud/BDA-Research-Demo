@@ -20,11 +20,29 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    healthcheck:
+      test: kafka-topics --bootstrap-server kafka:9092 --list
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  kafka-rest:
+    image: confluentinc/cp-kafka-rest:7.5.2
+    container_name: kafka-rest
+    depends_on:
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8082:8082"
+    environment:
+      KAFKA_REST_BOOTSTRAP_SERVERS: kafka:9092
+      KAFKA_REST_HOST_NAME: kafka-rest
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
     depends_on:
-      - kafka
+      kafka:
+        condition: service_healthy
     ports:
       - "8090:8080"
     environment:
@@ -37,7 +55,8 @@ services:
     hostname: schema-registry
     container_name: schema-registry
     depends_on:
-      - kafka
+      kafka:
+        condition: service_healthy
     ports:
       - "8081:8081"
     environment:
@@ -53,9 +72,12 @@ services:
     ports:
       - 8083:8083
     depends_on:
-      - kafka
-      - zookeeper
-      - transactions-database
+      kafka:
+        condition: service_healthy
+      zookeeper:
+        condition: service_started
+      transactions-database:
+        condition: service_healthy
     env_file:
       - .env
     volumes:
@@ -90,16 +112,35 @@ services:
 #      - default
 
   hazelcast-kafka:
-    build: HazelcastKafkaSink
+    build: hazelcast_kafka_sink
     container_name: hazelcast-kafka
     environment:
       HZ_NETWORK_PUBLICADDRESS: hazelcast-kafka:5701
       HZ_CLUSTERNAME: analytics-cluster
+    ports:
+      - "5702:5701"
     volumes:
       - hazelcast-kafka-gradle-cache:/root/.gradle
     networks:
       - hazelcast
       - default
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  kafka_power_bi_bridge:
+    build: kafka_power_bi_bridge
+    container_name: kpb_bridge
+    ports:
+      - "42069:8080"
+    networks:
+      - hazelcast
+      - default
+    volumes:
+      - kpb-gradle-cache:/root/.gradle
+    depends_on:
+      kafka:
+        condition: service_healthy
 
   hazelcast-dashboard:
     image: hazelcast/management-center:5.7.1
@@ -111,6 +152,7 @@ services:
       JAVA_OPTS: -Dhazelcast.logging.level=DEBUG
     ports:
       - "8080:8080"
+      - "5700:5701"
     networks:
       - hazelcast
       - default
@@ -147,4 +189,6 @@ volumes:
   user-data:
     driver: local
   hazelcast-kafka-gradle-cache:
+    driver: local
+  kpb-gradle-cache:
     driver: local
