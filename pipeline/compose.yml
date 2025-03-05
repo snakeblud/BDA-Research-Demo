@@ -70,7 +70,7 @@ services:
     hostname: kafka-connect
     container_name: kafka-connect
     ports:
-      - 8083:8083
+      - "8083:8083"
     depends_on:
       kafka:
         condition: service_healthy
@@ -99,17 +99,17 @@ services:
         
         sleep infinity
 
-#  hazelcast-node:
-#    image: hazelcast/hazelcast:5.5.0-jdk21
-#    container_name: hazelcast-node
-#    environment:
-#      HZ_NETWORK_PUBLICADDRESS: hazelcast-node:5701
-#      HZ_CLUSTERNAME: analytics-cluster
-#    ports:
-#      - "5701:5701"
-#    networks:
-#      - hazelcast
-#      - default
+  #  hazelcast-node:
+  #    image: hazelcast/hazelcast:5.5.0-jdk21
+  #    container_name: hazelcast-node
+  #    environment:
+  #      HZ_NETWORK_PUBLICADDRESS: hazelcast-node:5701
+  #      HZ_CLUSTERNAME: analytics-cluster
+  #    ports:
+  #      - "5701:5701"
+  #    networks:
+  #      - hazelcast
+  #      - default
 
   hazelcast-kafka:
     build: hazelcast_kafka_sink
@@ -146,7 +146,7 @@ services:
     image: hazelcast/management-center:5.7.1
     container_name: hazelcast-management-center
     environment:
-#      MC_DEFAULT_CLUSTER_MEMBERS: hazelcast-node:5701,hazelcast-kafka:5701
+      #      MC_DEFAULT_CLUSTER_MEMBERS: hazelcast-node:5701,hazelcast-kafka:5701
       MC_DEFAULT_CLUSTER_MEMBERS: hazelcast-kafka:5701
       MC_DEFAULT_CLUSTER: analytics-cluster
       JAVA_OPTS: -Dhazelcast.logging.level=DEBUG

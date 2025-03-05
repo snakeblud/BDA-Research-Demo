@@ -1,5 +1,5 @@
 # Use a base image with JDK
-FROM amazoncorretto:21-alpine3.21-jdk
+FROM amazoncorretto:21-alpine3.21
 
 # Set a working directory in the container
 WORKDIR /app
@@ -13,5 +13,7 @@ COPY settings.gradle.kts .
 # Copy the source code
 COPY src src
 
+RUN chmod +x ./gradlew
+
 # Use the Gradle wrapper to run the application, avoiding the daemon
-ENTRYPOINT ["sh", "-c", "./gradlew shadowJar && ./gradlew run"]
+ENTRYPOINT ["sh", "-c", "./gradlew run"]

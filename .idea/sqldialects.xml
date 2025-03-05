@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/pipeline/databases/transactions/03-schema.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/pipeline/databases/transactions/04-insert-mock-data.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/pipeline/databases/transactions/05-new-user.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/pipeline/databases/transactions/06-prepare-wal.sql" dialect="PostgreSQL" />
+  </component>
+</project>

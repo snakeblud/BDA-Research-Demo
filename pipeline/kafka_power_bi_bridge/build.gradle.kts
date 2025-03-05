@@ -23,6 +23,8 @@ dependencies {
 
 	implementation("org.springframework.kafka:spring-kafka:3.3.3")
 
+	implementation("org.apache.kafka:connect-json:3.9.0")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test:3.4.3")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.12.0")
 }

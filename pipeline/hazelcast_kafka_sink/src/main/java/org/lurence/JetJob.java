@@ -15,7 +15,8 @@ import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.common.serialization.*;
+import org.apache.kafka.connect.json.JsonSerializer;
+import org.apache.kafka.connect.json.JsonDeserializer;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Collections;
@@ -60,7 +61,10 @@ public class JetJob {
 
         Pipeline p = Pipeline.create();
 
-        StreamStage<Map.Entry<Object, Object>> stream = p.readFrom(KafkaSources.kafka(kafkaProps(), "is484.public.roles"))
+        StreamStage<Map.Entry<Object, Object>> stream = p.readFrom(
+                    KafkaSources.kafka(kafkaProps(),
+                    "is484.public.tbank_cleaned"
+                ))
                         .withNativeTimestamps(0);
 
         Properties properties = kafkaSinkProps();
@@ -83,8 +87,8 @@ public class JetJob {
 
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
-        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getCanonicalName());
-        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getCanonicalName());
+        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, JsonSerializer.class.getCanonicalName());
+        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class.getCanonicalName());
         properties.setProperty(ProducerConfig.ACKS_CONFIG, "all");
         properties.setProperty(ProducerConfig.RETRIES_CONFIG, "3");
         properties.setProperty(ProducerConfig.LINGER_MS_CONFIG, "5");
@@ -115,8 +119,8 @@ public class JetJob {
     private static Properties kafkaProps() {
         Properties props = new Properties();
         props.setProperty("bootstrap.servers", "kafka:9092");
-        props.setProperty("key.deserializer", StringDeserializer.class.getCanonicalName());
-        props.setProperty("value.deserializer", StringDeserializer.class.getCanonicalName());
+        props.setProperty("key.deserializer", JsonDeserializer.class.getCanonicalName());
+        props.setProperty("value.deserializer", JsonDeserializer.class.getCanonicalName());
         props.setProperty("auto.offset.reset", "earliest");
 
         return props;

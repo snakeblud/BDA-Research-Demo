@@ -1,0 +1,418 @@
+CUSTOMERID,FAMILYNAME,GIVENNAME,DATEOFBIRTH,CITY,COUNTRY,POSTALCODE,CELLCOUNTRYCODE,PHONECOUNTRYCODE,CERTIFICATEEXPIRYDATE,CERTIFICATEISSUER,CERTIFICATETYPE,LASTMAINTENANCETELLERID,REGISTRATIONDATE,CUSTOMERTYPE,NATIONALITY,GENDER,ETHNICGROUP,OCCUPATION,EMAIL,ISBILLINGORG,ISMERCHANT
+1852,Michelle Doe,John Doe,1/1/1900 0:00,None,Singapore,540345,65,65,31/12/2099,Singapore,IC number,API,14/9/2020 0:00,100,Singapore,Prefer to not say,Singapore,None,abc@abc.com,FALSE,FALSE
+1859,AAA,EE,23/9/1996 0:00,None,TAIWAN,555,65,65,31/12/2099,TAIWAN,IC number,API,16/10/2020 0:00,100,TAIWAN,Prefer to not say,TAIWAN,PG,None,FALSE,FALSE
+1862,None,KIMOKO,1/1/1900 0:00,Taipei,TW,330,65,65,31/12/2099,TW,IC number,API,19/10/2020 0:00,100,TW,Prefer to not say,TW,None,None,FALSE,FALSE
+1865,None,Amy,1/1/1900 0:00,None,eaef,asefaef,65,65,31/12/2099,eaef,IC number,API,19/10/2020 0:00,100,eaef,Prefer to not say,eaef,None,None,FALSE,FALSE
+1867,None,None,1/1/1900 0:00,None,None,None,None,None,31/12/2099,None,IC number,API,7/12/2020 0:00,100,Prefer to not say,Prefer to not say,Prefer to not say,None,None,FALSE,FALSE
+1902,Ma,Ningzhi,31/12/1994 0:00,Singapore,Singapore,512345,65,65,31/12/2099,Singapore,IC number,API,21/8/2023 0:00,100,Singapore,Male,Singapore,Student,darientan28@gmail.com,FALSE,FALSE
+1946,test13,smu,18/9/2023 0:00,Adrar,Algeria,123456,213,213,31/12/2099,Algeria,IC number,API,18/9/2023 0:00,100,Algeria,Female,Algeria,None,testing@gmail.com,FALSE,FALSE
+1947,test14,smu,18/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,18/9/2023 0:00,100,Singapore,Female,Singapore,None,testing@gmail.com,FALSE,FALSE
+1948,test15,smu,19/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,19/9/2023 0:00,100,Singapore,Female,Singapore,None,testing@gmail.com,FALSE,FALSE
+1949,test14,smu,22/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,22/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1950,test13,smu,22/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,22/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1951,test17,smu,22/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,22/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1952,test19,smu,22/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,22/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1953,test4,sns,22/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,22/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1954,test20,smu,22/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,22/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1955,test23,dbs,23/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,23/9/2023 0:00,100,Singapore,Female,Singapore,None,testing@gmail.com,FALSE,FALSE
+1956,test,tester,23/9/2023 0:00,Singapore,Singapore,599999,65,65,31/12/2099,Singapore,IC number,API,23/9/2023 0:00,100,Singapore,Male,Singapore,None,123@gmail.com,FALSE,FALSE
+1958,test,ningzhitest,23/9/2023 0:00,Singapore,Singapore,599999,65,65,31/12/2099,Singapore,IC number,API,23/9/2023 0:00,100,Singapore,Male,Singapore,None,123,FALSE,FALSE
+1959,test01,smu,24/9/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Male,Singapore,None,test3@gmail.com,FALSE,FALSE
+1960,test240901,smu,24/9/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Female,Singapore,None,testing@gmail.com,FALSE,FALSE
+1961,test240902,smu,24/9/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1962,test240903,smu,24/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Female,Singapore,None,testing@gmail.com,FALSE,FALSE
+1963,test,smu,24/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Female,Singapore,None,testing@gmail.com,FALSE,FALSE
+1965,test,testwe123,24/9/2023 0:00,Singapore,Singapore,589993,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Male,Singapore,None,123,FALSE,FALSE
+1966,test111,smu,24/9/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Female,Singapore,None,testing@gmail.com,FALSE,FALSE
+1967,test5,dbs,24/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1968,as,asd,20/9/2023 0:00,Adam,Oman,123123,968,968,31/12/2099,Oman,IC number,API,24/9/2023 0:00,100,Oman,Female,Oman,None,ts@gmail.com,FALSE,FALSE
+1969,DF123123,DF123123,29/8/2023 0:00,Singapore,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Male,Singapore,ABBOT,DF123123@123.com,FALSE,FALSE
+1971,asd,asd,7/9/2023 0:00,Ceyranbatan,Azerbaijan,1212,994,994,31/12/2099,Azerbaijan,IC number,API,24/9/2023 0:00,100,Azerbaijan,Male,Azerbaijan,None,ts@h.com,FALSE,FALSE
+1972,the builder,Bob,24/9/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,24/9/2023 0:00,100,Singapore,Male,Singapore,None,123,FALSE,FALSE
+1973,XXXX,XXXX,19/9/2023 0:00,Singapore,Singapore,738099,65,65,31/12/2099,Singapore,IC number,API,25/9/2023 0:00,100,Singapore,Prefer to not say,Singapore,None,abc@smu.edu.sg,FALSE,FALSE
+1974,Ong,Zhi Yi,22/6/1998 0:00,Singapore,Singapore,670325,65,65,31/12/2099,Singapore,IC number,API,25/9/2023 0:00,100,Singapore,Male,Singapore,None,zhiyi456@gmail.com,FALSE,FALSE
+1975,test10,dbs,25/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,25/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1976,boi,sexy ,4/12/2010 0:00,Alexandria,Egypt,1782930,20,20,31/12/2099,Egypt,IC number,API,25/9/2023 0:00,100,Egypt,Prefer to not say,Egypt,ABBOT,sexybeast@gmail.com,FALSE,FALSE
+1977,test11,dbs,25/9/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,25/9/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+1978,ee,sophia,15/10/2001 0:00,Singapore,Singapore,178902,65,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Female,Singapore,None,sophia.ee1510@gmail.com,FALSE,FALSE
+1979,215,Golden God 215,12/12/1999 0:00,Kitanagoya-shi,Japan,7382,81,81,31/12/2099,Japan,IC number,API,26/9/2023 0:00,100,Japan,Male,Japan,None,iamben@gmail.com,FALSE,FALSE
+1980,Y,A,1/4/2000 0:00,Singapore,Singapore,345678,65,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Female,Singapore,None,aaaayyy@gmail.com,FALSE,FALSE
+1981,Hi,Hi,11/11/2001 0:00,Singapore,Singapore,0,65,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Male,Singapore,None,ningxianjin.2020@scis.smu.edu.sg,FALSE,FALSE
+1982,wan,sic,1/1/1999 0:00,Singapore,Singapore,575954,65,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Male,Singapore,ABBOT,sic@gmail.com,FALSE,FALSE
+1983,lee,faith,26/1/2022 0:00,Singapore,Singapore,545454,65,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Female,Singapore,None,faithlee@gmail.com,FALSE,FALSE
+1984,Ong,Zhi yi,21/10/2023 0:00,SG,Singapore,589999,Singapore,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Female,Singapore,None,darientan22222@gmail.com,FALSE,FALSE
+1985,asdasdad,asdasd,6/9/2023 0:00,Singapore,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Male,Singapore,None,asdh@gmail.com,FALSE,FALSE
+1986,asdasdad,asdasd,6/9/2023 0:00,Singapore,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,26/9/2023 0:00,100,Singapore,Male,Singapore,None,asdh@gmail.com,FALSE,FALSE
+1987,Tang,Darient,27/9/1989 0:00,Singapore,Singapore,512512,65,65,31/12/2099,Singapore,IC number,API,27/9/2023 0:00,100,Singapore,Male,Singapore,None,darient@gamoil.com,FALSE,FALSE
+1988,TAN,Darien,27/9/2023 0:00,Singapore,Singapore,589930,65,65,31/12/2099,Singapore,IC number,API,27/9/2023 0:00,100,Singapore,Male,Singapore,None,123@gmail.com,FALSE,FALSE
+1989,test,dbs,2/10/2023 0:00,Singapore,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,30/9/2023 0:00,100,Singapore,Female,Singapore,None,a@gmail.com,FALSE,FALSE
+1990,test,smu(dbs),21/9/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,30/9/2023 0:00,100,Singapore,Female,Singapore,None,e@g.com,FALSE,FALSE
+2041,test22,smu,6/10/2023 0:00,Singapore,Singapore,570292,65,65,31/12/2099,Singapore,IC number,API,6/10/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2054,1,th,3/10/2023 0:00,Ceyranbatan,Azerbaijan,1,994,994,31/12/2099,Azerbaijan,IC number,API,6/10/2023 0:00,100,Azerbaijan,Female,Azerbaijan,None,s@g.com,FALSE,FALSE
+2056,Tan,Darien,7/10/2023 0:00,Singapore,Singapore,588830,65,65,31/12/2099,Singapore,IC number,API,7/10/2023 0:00,100,Singapore,Male,Singapore,None,darien.tan.2020@scis.smu.edu.sg,FALSE,FALSE
+2089,test,admin1,20/10/2023 0:00,SG,Singapore,123,Singapore,65,31/12/2099,Singapore,IC number,API,20/10/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2092,test,admin2,20/10/2023 0:00,SG,Singapore,123456,Singapore,65,31/12/2099,Singapore,IC number,API,20/10/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2093,12,2,17/10/2023 0:00,SG,Singapore,1231,Singapore,65,31/12/2099,Singapore,IC number,API,20/10/2023 0:00,100,Singapore,Male,Singapore,None,12@g.com,FALSE,FALSE
+2094,test,admin1v2,20/10/2023 0:00,SG,Singapore,123,Singapore,65,31/12/2099,Singapore,IC number,API,20/10/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2095,test,admindbs,20/10/2023 0:00,SG,Singapore,123,Singapore,65,31/12/2099,Singapore,IC number,API,20/10/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2096,-,Coffee Bean,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,9/7/2013 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2097,-,Kinetic,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2098,-,SingTel,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2099,-,Adobe Premiere Pro,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2100,-,Alan Corp,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2101,-,Amazon Prime,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2102,-,America On Line,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2103,-,American Mobile,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2104,-,British Telecom,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2105,-,China Mobile,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2106,-,China Telecom,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2107,-,Company,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2108,-,Deliveroo Plus,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2109,-,Deutsche Telekom,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2110,-,English Premier League,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2111,-,GMS,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2112,-,Great Eastern Life,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2113,-,Housing Development Board,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2114,-,KERY,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2115,-,M1,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2116,-,Malaysia Telekom,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2117,-,Maxis,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2118,-,Mon,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2119,-,MyFitnessPal,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2120,-,Netflix,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2121,-,NKF,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2122,-,Omea Telecom,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2123,-,Original,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2124,-,PandaPro,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2125,-,Primus,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2126,-,Regina,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2127,-,SeanKJM,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2128,-,SEKAB,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2129,-,Singapore Power,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2130,-,Sports Plus,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2131,-,Star Alliance,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2132,-,Starhub,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2133,-,Strava,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2134,-,Telstra,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2135,-,The Business Times,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2136,-,The Strait Times,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2137,-,UPGEN MOTOR,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2138,-,Verizon,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2139,-,Vodafone,11/12/1989 0:00,None,None,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2140,-,Zoom,11/12/1989 0:00,Singapore,Singapore,730808,65,65,31/12/2099,Singapore,IC number,Teller,27/10/2023 0:00,200,Singapore,Male,Singapore,None,alanmegargel@smu.edu.sg,TRUE,TRUE
+2141,test5,smu,29/10/2023 0:00,Singapore,Singapore,123,SG,65,31/12/2099,Singapore,IC number,API,29/10/2023 0:00,100,Singapore,Female,Singapore,None,smutest5@gmail.com,FALSE,FALSE
+2142,er,er,7/11/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,6/11/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2143,testcry,smu,7/11/2023 0:00,Singapore,Singapore,23,65,65,31/12/2099,Singapore,IC number,API,6/11/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2144,test,test,1/11/2023 0:00,Asadabad,Afghanistan,121,93,93,31/12/2099,Afghanistan,IC number,API,6/11/2023 0:00,100,Afghanistan,Male,Afghanistan,None,test,FALSE,FALSE
+2145,test,test,6/11/2023 0:00,Bargaal,Somalia,12,252,252,31/12/2099,Somalia,IC number,API,6/11/2023 0:00,100,Somalia,Prefer to not say,Somalia,None,test,FALSE,FALSE
+2152,20,darien,6/11/2023 0:00,Singapore,Singapore,12,65,65,31/12/2099,Singapore,IC number,API,6/11/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2153,test,test,7/11/2023 0:00,Singapore,Singapore,123,65,65,31/12/2099,Singapore,IC number,API,6/11/2023 0:00,100,Singapore,Male,Singapore,None,et,FALSE,FALSE
+2155,df,dfdf,7/11/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,7/11/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2156,dfg,adfv,7/11/2023 0:00,Balkh,Afghanistan,12,93,93,31/12/2099,Afghanistan,IC number,API,7/11/2023 0:00,100,Afghanistan,Male,Afghanistan,None,testing@gmail.com,FALSE,FALSE
+2157,aer,aef,7/11/2023 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,7/11/2023 0:00,100,Singapore,Male,Singapore,None,testing@gmail.com,FALSE,FALSE
+2158,Tester,UAT,1/1/2000 0:00,Singapore,Singapore,179873,65,65,31/12/2099,Singapore,IC number,API,14/11/2023 0:00,100,Singapore,Male,Singapore,None,testUAT@test.com,TRUE,FALSE
+2159,the,codemovers,1/1/1997 0:00,Singapore,Singapore,188065,SG,65,31/12/2099,Singapore,IC number,API,14/11/2023 0:00,100,Singapore,Male,Singapore,ABBOT,darientan28@gmail.com,FALSE,FALSE
+2160,Tan,Bobby,28/1/1975 0:00,Singapore,Singapore,188065,65,65,31/12/2099,Singapore,IC number,API,14/11/2023 0:00,100,Singapore,Male,Singapore,BANK DIRECTOR,darientan28@gmail.com,FALSE,FALSE
+2168,dbs,thecodemovers,4/2/1975 0:00,Singapore,Singapore,188065,65,65,31/12/2099,Singapore,IC number,API,15/11/2023 0:00,100,Singapore,Male,Singapore,CONSULTANT,darientan28@gmail.com,FALSE,FALSE
+2169,Megargel,Alan,11/12/1960 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,Singapore,IC number,API,15/12/2023 0:00,100,199,Male,199,PROFESSOR,alanmegargel@smu.edu.sg,FALSE,FALSE
+2170,En,Ick,29/5/1997 0:00,Singapore,Singapore,542119,None,None,31/12/2099,Singapore,IC number,API,19/1/2024 0:00,100,Singapore,Male,Singapore,SWE,None,FALSE,FALSE
+2171,Smith,John,1/1/1990 0:00,Camacupa,Angola,123456,244,244,31/12/2099,Angola,IC number,API,21/1/2024 0:00,100,Angola,Male,Angola,ABRASIVES MIXER,john.smith@mail.com,FALSE,FALSE
+2172,smith,john,1/1/1990 0:00,Singapore,Singapore,111111,65,65,31/12/2099,Singapore,IC number,API,21/1/2024 0:00,100,Singapore,Male,Singapore,assdf,john@mail.com,FALSE,FALSE
+2173,smith,john,1/1/1990 0:00,Singapore,Singapore,111111,65,65,31/12/2099,Singapore,IC number,API,21/1/2024 0:00,100,Singapore,Male,Singapore,assdf,john@mail.com,FALSE,FALSE
+2197,lim,tse hwee,12/2/2024 0:00,Bukit Timah,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,9/2/2024 0:00,100,Singapore,Female,Singapore,Student,tsehwee.lim.2020@scis.smu.edu.sg,FALSE,FALSE
+2198,l,th,1/1/1999 0:00,Punggol,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,9/2/2024 0:00,100,Singapore,Female,Singapore,None,ts@g.com,FALSE,FALSE
+2199,abc,abc,1/9/2000 0:00,Bukit Batok,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,9/2/2024 0:00,100,Singapore,Male,Singapore,Abrasive wheel moulder,b@h.com,FALSE,FALSE
+2200,abc,abc,1/9/2000 0:00,Bukit Batok,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,9/2/2024 0:00,100,Singapore,Male,Singapore,Abrasive wheel moulder,b@h.com,FALSE,FALSE
+2201,a,aa,1/1/2000 0:00,None,Angola,111111,244,244,31/12/2099,Angola,IC number,API,9/2/2024 0:00,100,Angola,Male,Angola,None,a@m.co,FALSE,FALSE
+2202,lim,hwee,20/2/2024 0:00,Downtown Core,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,20/2/2024 0:00,100,Singapore,Female,Singapore,Able seaman,tsehwee2@gmail.com,FALSE,FALSE
+2203,biz,th,21/2/2024 0:00,Ang Mo Kio,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,21/2/2024 0:00,200,Singapore,Female,Singapore,None,tsehwee2@gmail.com,FALSE,FALSE
+2204,Blub,Derp,7/2/2024 0:00,Bukit Timah,Singapore,123456,65,65,31/12/2099,199,IC number,API,25/2/2024 0:00,100,199,Male,199,Student,user1@mail.com,FALSE,FALSE
+2205,None,SMU,1/1/1900 0:00,Jurong West,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/2/2024 0:00,200,199,Prefer to not say,199,ABBOT,user1@mail.com,FALSE,FALSE
+2206,None,SMU,1/1/1900 0:00,Jurong West,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/2/2024 0:00,200,199,Prefer to not say,199,ABBOT,user1@mail.com,FALSE,FALSE
+2207,Smith,John,28/2/2024 0:00,Bukit Timah,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/2/2024 0:00,100,199,Male,199,ABBOT,user1@mail.com,FALSE,FALSE
+2210,a,a,28/2/2024 0:00,Ashkasham,Singapore,123123,93,93,31/12/2099,1,IC number,API,28/2/2024 0:00,100,1,Male,1,ABBOT,user5@mail.com,FALSE,FALSE
+2211,4242,4242,6/5/2007 0:00,Bukit Timah,Singapore,23232,65,65,31/12/2099,199,IC number,API,4/3/2024 0:00,100,199,Male,199,ABBOT,test1@gmail.com,FALSE,FALSE
+2212,4242,4242,4/2/1990 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,5/3/2024 0:00,100,199,Male,199,ABBOT,4242@gmail.com,FALSE,FALSE
+2214,4242,4242,4/2/2002 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,5/3/2024 0:00,100,199,Male,199,ABBOT,4242@gmail.com,FALSE,FALSE
+2215,4242,4242,31/3/2000 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,5/3/2024 0:00,100,199,Male,199,ABBOT,4242@gmail.com,FALSE,FALSE
+2216,4242,4242,4/2/1990 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,5/3/2024 0:00,100,199,Male,199,ABBOT,42424242@gmail.com,FALSE,FALSE
+2217,4242,4242,4/2/1990 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,5/3/2024 0:00,100,199,Male,199,ABBOT,4242@gmail.com,FALSE,FALSE
+2218,4242,4242,4/2/2000 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,5/3/2024 0:00,100,199,Male,199,ABBOT,4242@gmail.com,FALSE,FALSE
+2219,4242,4242,4/2/2000 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,5/3/2024 0:00,100,199,Male,199,ABBOT,s42424242L@gmail.com,FALSE,FALSE
+2221,Test,User,4/2/1998 0:00,Bukit Timah,Singapore,424242,65,65,31/12/2099,199,IC number,API,6/3/2024 0:00,100,199,Male,199,ABBOT,4242@gmail.com,FALSE,FALSE
+2222,ew,ew,4/2/1990 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,6/3/2024 0:00,100,199,Male,199,ABBOT,4242@gmail.com,FALSE,FALSE
+2223,None,1324,1/1/1900 0:00,Ashkasham,Singapore,1234,93,93,31/12/2099,1,IC number,API,9/3/2024 0:00,200,1,Prefer to not say,1,None,user1@mail.com,FALSE,FALSE
+2224,None,1234,1/1/1900 0:00,Bukit Timah,Singapore,2134,65,65,31/12/2099,199,IC number,API,9/3/2024 0:00,200,199,Prefer to not say,199,None,user1@mail.com,FALSE,TRUE
+2225,None,4242,1/1/1900 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,13/3/2024 0:00,200,199,Prefer to not say,199,None,4242@gmail.com,FALSE,FALSE
+2226,4242,4242,13/3/2024 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,13/3/2024 0:00,100,199,Male,199,Student,4242@mail.com,FALSE,FALSE
+2227,a,a,17/3/2024 0:00,Bukit Timah,Singapore,123123,65,65,31/12/2099,199,IC number,API,17/3/2024 0:00,100,199,Male,199,Student,user1@mail.com,FALSE,FALSE
+2228,leong,jon,20/3/1999 0:00,Bukit Timah,Singapore,466507,65,65,31/12/2099,199,IC number,API,20/3/2024 0:00,100,199,Male,199,ABBOT,smu@smu.com,FALSE,FALSE
+2229,Smith,John,6/3/2022 0:00,Yishun,Singapore,999900,65,65,31/12/2099,199,IC number,API,20/3/2024 0:00,100,199,Male,199,ABLE SEAMAN,2333@gmail.com,FALSE,FALSE
+2230,-,th,20/3/2024 0:00,Bukit Timah,Singapore,111111,65,65,31/12/2099,Singapore,IC number,API,20/3/2024 0:00,100,Singapore,Female,Singapore,None,2@w.co,FALSE,FALSE
+2242,Megargel,Alan,11/12/1960 0:00,Woodlands,Singapore,737927,65,65,31/12/2099,199,IC number,API,29/3/2024 0:00,100,199,Male,199,PROFESSOR,alanmegargel@smu.edu.sg,FALSE,FALSE
+2243,None,Narfin,1/1/1900 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,29/3/2024 0:00,200,199,Prefer to not say,199,None,alanmegargel@smu.edu.sg,FALSE,FALSE
+2244,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,6/4/2024 0:00,"100",199,Male,199,Student,user10@mail.com,FALSE,FALSE
+2245,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,6/4/2024 0:00,100,199,Male,199,Student,user9@mail.com,FALSE,FALSE
+2246,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,6/4/2024 0:00,"100",199,Male,199,Student,user11@mail.com,FALSE,FALSE
+2247,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,11/4/2024 0:00,"100",199,Male,199,Student,user12@mail.com,FALSE,FALSE
+2248,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,11/4/2024 0:00,100,199,Male,199,Student,user16@mail.com,FALSE,FALSE
+2249,Smith,John,22/2/2022 0:00,Bukit Timah,Singapore,4242,65,65,31/12/2099,199,IC number,API,11/4/2024 0:00,100,199,Male,199,Student,user20@mail.com,FALSE,FALSE
+2250,525252,525252,24/2/4222 0:00,Bukit Timah,Singapore,525252,65,65,31/12/2099,199,IC number,API,11/4/2024 0:00,100,199,Male,199,Student,4242@mail.com,FALSE,FALSE
+2266,5353555 TEST,TEST,17/2/2000 0:00,Bukit Timah,Singapore,535353,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,ACCESS NETWORK MANAGER,535353@gmail.com,FALSE,FALSE
+2267,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,Student,user17@mail.com,FALSE,FALSE
+2268,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,Student,user21@mail.com,FALSE,FALSE
+2269,Smith,John,22/12/1990 0:00,Bukit Timah,Singapore,123123,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,Student,user22@mail.com,FALSE,FALSE
+2270,Smith,John,1/12/1990 0:00,Tanjong Pagar,Singapore,123123,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,ABBOT,user23@mail.com,FALSE,FALSE
+2271,Smith,John,12/1/1990 0:00,Bukit Timah,Singapore,123123,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,ABBOT,user24@mail.com,FALSE,FALSE
+2272,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,Student,user13@mail.com,FALSE,FALSE
+2273,Smith,John,1/1/1900 0:00,Bukit Tima,Singapore,123123,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,Student,user25@mail.com,FALSE,FALSE
+2274,test 2,test 2,23/10/1996 0:00,Bukit Timah,Singapore,535353,65,65,31/12/2099,199,IC number,API,18/4/2024 0:00,100,199,Male,199,ABBOT,53535353@gmail.com,FALSE,FALSE
+2275,Smith,John,1/1/1900 0:00,Bukit Timah,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,18/4/2024 0:00,100,Singapore,Male,Singapore,Student,user26@mail.com,FALSE,FALSE
+2276,Smith,John,1/1/1900 0:00,Bukit Timah,Singapore,123123,65,65,31/12/2099,Singapore,IC number,API,19/4/2024 0:00,100,Singapore,Male,Singapore,Student,user30@mail.com,FALSE,FALSE
+2278,Megargel,Alan,11/12/1960 0:00,Woodlands,Singapore,111111,65,65,31/12/2099,199,IC number,API,6/7/2024 0:00,100,199,Male,199,PROFESSOR,alanmegargel@smu.edu.sg,FALSE,FALSE
+2279,None,TestCo,1/1/1900 0:00,Bukit Timah,Singapore,51234,65,65,31/12/2099,199,IC number,API,17/7/2024 0:00,200,199,Prefer to not say,199,None,test@testCo.com,FALSE,FALSE
+2280,None,Impawsible,1/1/1900 0:00,Singapore,Singapore,23665,65,65,31/12/2099,199,IC number,API,5/8/2024 0:00,200,199,Prefer to not say,199,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2281,None,Impawsible,1/1/1900 0:00,Serangoon,Singapore,600000,65,65,31/12/2099,199,IC number,API,5/8/2024 0:00,200,Singapore,Prefer to not say,Singapore,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2282,Zhou,Jeffry,25/8/2000 0:00,None,Singapore,600000,65,65,31/12/2099,199,IC number,API,5/8/2024 0:00,100,199,Male,199,Student,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2283,None,TestCopUser,1/1/1900 0:00,Woodlands,Singapore,760888,65,65,31/12/2099,199,IC number,API,18/8/2024 0:00,200,199,Prefer to not say,199,None,TestCopUser1@test.com,FALSE,FALSE
+2284,TestCopAccount1,TestCopAccount1,31/12/2014 0:00,Singapore,Singapore,512345,None,None,31/12/2099,Singapore,IC number,API,19/8/2024 0:00,200,Singapore,Prefer to not say,Singapore,None,TestCopAccount1@test.com,FALSE,FALSE
+2285,None,TestCopAccount2,1/1/1900 0:00,Ang Mo Kio,Singapore,512345,65,65,31/12/2099,199,IC number,API,19/8/2024 0:00,200,199,Prefer to not say,199,None,TestCopAccount2@test.com,FALSE,FALSE
+2286,None,ABC Testaccount ,1/1/1900 0:00,Bukit Timah,Singapore,661021,65,65,31/12/2099,199,IC number,API,19/8/2024 0:00,200,199,Prefer to not say,199,None,abc@test.com,FALSE,FALSE
+2287,None,Test,1/1/1900 0:00,Singapore,Singapore,178902,65,65,31/12/2099,199,IC number,API,20/8/2024 0:00,200,199,Prefer to not say,199,None,test@alexis.com,FALSE,FALSE
+2288,L,Alexis,31/12/1999 0:00,Singapore,Singapore,string,65,65,31/12/2099,199,IC number,API,20/8/2024 0:00,100,Singapore,Male,Singapore,Student,darientan28@gmail.com,TRUE,FALSE
+2289,Blanston,Gern,11/12/1960 0:00,Woodlands,Singapore,730808,65,65,31/12/2099,199,IC number,API,23/8/2024 0:00,100,199,Male,199,ASSOCIATE PROFESSOR,alanmegargel@smu.edu.sg,FALSE,FALSE
+2290,Blanston,Gern,20/8/2004 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,23/8/2024 0:00,100,199,Male,199,ABBOT,alanmegargel@smu.edu.sg,FALSE,FALSE
+2291,None,Corp 123,1/1/1900 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,23/8/2024 0:00,200,199,Prefer to not say,199,None,alanmegargel@smu.edu.sg,FALSE,FALSE
+2292,Lim,Tse Hwee,17/9/1995 0:00,None,None,0,65,65,31/12/2099,None,IC number,API,23/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,tsehwee.lim.2020@scis.smu.edu.sg,FALSE,FALSE
+2293,Ho,Shi Hui,18/7/2003 0:00,Singapore,Singapore,123,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,199,Female,199,AIRCRAFT CLEANER,shihui.ho.2022@scis.smu.edu.sg,FALSE,FALSE
+2294,C,Keona,24/12/2003 0:00,None,None,178902,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,Student,keona.chua.2022@smu.edu.sg,FALSE,FALSE
+2295,Lim,Jane,4/9/2024 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,FARM MANAGER,janelim.2021@scis.smu.edu.sg,FALSE,FALSE
+2296,Chiluveru,Sathwik,1/1/1970 0:00,Singapore,Singapore,696969,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,None,sathwikc.2022@scis.smu.edu.sg,FALSE,FALSE
+2297,Tan,Jia Jin,1/1/2023 0:00,Singapore,Singapore,540290,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Student,jiajin.tan.2021@scis.smu.edu.sg,FALSE,FALSE
+2298,Tang,Wei Long,20/11/2000 0:00,Jurong West,Singapore,600389,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Student,wltang.2022@scis.smu.edu.sg,FALSE,FALSE
+2299,Hay,HayBrother,1/1/2023 0:00,None,Singapore,673633,65,65,31/12/2099,101,IC number,API,28/8/2024 0:00,100,101,Male,101,CROCODILE FARMER,malcolm.sim.2021@scis.smu.edu.sg,FALSE,FALSE
+2300,Wong,"Wong Jian Xuan, Damon",13/8/1999 0:00,Yishun,Singapore,670369,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Student,damon.wong.2022@scis.smu.edu.sg,FALSE,FALSE
+2301,Tan,Quan Wah,1/1/2010 0:00,None,Singapore,560180,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,BOAT CLEANER,quanwah.tan.2021@smu.edu.sg,FALSE,FALSE
+2302,Loh,Gerard,1/1/2001 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Enterprise Architect,gerard.loh.2022@scis.smu.edu.sg,FALSE,FALSE
+2303,Siew,Amelia,1/1/1967 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,amelia.siew.2022@smu.edu.sg,FALSE,FALSE
+2304,Wong,Gabriel,1/1/2002 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,None,gabrielwong.2021@scis.smu.edu.sg,FALSE,FALSE
+2305,Tang,Wei Long,11/11/2000 0:00,None,None,600243,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Male,Prefer to not say,None,wltang.2022@scis.smu.edu.sg,FALSE,FALSE
+2306,Naidu,Jessa,1/1/1967 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,jessanaidu.2022@smu.edu.sg,FALSE,FALSE
+2307,Chiluveru,Sathwik,1/1/1970 0:00,Bukit Timah,Singapore,258445,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,CERAMICS RESEARCH ENGINEER,sathwikc.2022@scis.smu.edu.sg,FALSE,FALSE
+2308,Test,Test,10/10/1999 0:00,Bukit Timah,Singapore,999999,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,ABBOT,lucerneloke.2022@scis.smu.edu.sg,FALSE,FALSE
+2309,Ng,Jing Jie ,29/9/1999 0:00,Tampines,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Student,jingjie.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2310,chong,Ritz,31/1/2001 0:00,Singapore,Singapore,888888,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,ritz.chong.2022@scis.smu.edu.sg,FALSE,FALSE
+2311,P,Ming Ying,19/1/2002 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,None,mypeh.2021@scis.smu.edu.sg,FALSE,FALSE
+2312,Chiluveru,Sathwik,1/1/1970 0:00,Orchard Road,Singapore,258445,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,ABLE SEAMAN,sathwikc.2022@scis.smu.edu.sg,FALSE,FALSE
+2313,Ng,Taz,16/1/2003 0:00,None,None,534023,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,taz.ng.2022@smu.edu.sg,FALSE,FALSE
+2314,Kham,Fern,17/8/2001 0:00,Singapore,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,kknang.2022@scis.smu.edu,FALSE,FALSE
+2315,cham,Shyan,10/1/2003 0:00,Tampines,Singapore,520735,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,shyan.cham.2022@scis.smu.edu.sg,FALSE,FALSE
+2316,Lim,Zi Yi,7/3/2001 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Enterprise Architect,ziyi.lim.2022@scis.smu.edu.sg,FALSE,FALSE
+2317,Lim,Alyssa ,13/8/2003 0:00,Hougang,Singapore,512345,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,alyssa.lim.2022@scis.smu.edu.sg,FALSE,FALSE
+2318,Chua,Clarise,6/1/2003 0:00,Hougang,Singapore,520123,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,None,clarisechua.2022@scis.smu.edu.sg,FALSE,FALSE
+2319,Lee,Ming Yan,2/1/2000 0:00,Punggol,Singapore,511222,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,minweiah585@gmail.com,FALSE,FALSE
+2320,Ng,Jing Jie,29/9/1999 0:00,Tampines,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,jingjie.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2321,Chok,Javan,11/11/2002 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Male,Prefer to not say,None,javan.chok.2022@scis.smu.edu.sg,FALSE,FALSE
+2323,Teo,Ryan,1/1/2000 0:00,None,Singapore,0,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,SOCIAL ESCORT,ryan.teo.2022@scis.smu.edu.sg,FALSE,FALSE
+2324,Teo,Axel,1/1/2000 0:00,None,None,0,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Male,Prefer to not say,SOCIAL ESCORT,pinbo.teo.2022@scis.smu.edu.sg,FALSE,FALSE
+2325,Siah,Rowayne,3/7/2000 0:00,Bedok,Singapore,470147,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,DEBT COLLECTOR,rowaynesiah.2022@scis.smu.edu.sg,FALSE,FALSE
+2326,Yap,Jocelyn,10/10/2001 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,jocelyn.yap.2022@scis.smu.edu.sg,FALSE,FALSE
+2327,Doe,John,1/8/2024 0:00,Woodlands,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,ABBOT,shawn.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2328,Lim,Eunice,12/12/2012 0:00,Rochor,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,None,eunice.lim.2022@scis.smu.edu.sg,FALSE,FALSE
+2329,k,f,9/8/2024 0:00,Bukit Batok,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,ABLE SEAMAN,shawn.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2330,Yap,Jocelyn,18/2/2001 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,jocelyn.yap.2022@scis.smu.edu.sg,FALSE,FALSE
+2331,De Saram,Bodhini Randika ,3/10/2004 0:00,None,Singapore,114560,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,brsaram.2022@scis.smu.edu.sg,FALSE,FALSE
+2332,Christina,Tirsa ,1/8/2024 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,tchristina.2022@scis.smu.edu.sg,FALSE,FALSE
+2333,Khoo,Ryan,21/11/2000 0:00,None,Singapore,555555,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,None,ryan.khoo.2022@scis.smu.edu.sg,FALSE,FALSE
+2334,Sin,Myat,9/6/2002 0:00,None,Singapore,555555,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Student,mpseaint@smu.edu.sg,FALSE,FALSE
+2335,Christina,Tirsa ,5/8/2024 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,tchristina.2022@scis.smu.edu.sg,FALSE,FALSE
+2336,Tan,Edwin,28/8/2024 0:00,None,Singapore,444444,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,Student,edwin.tan.2022@scis.smu.edu.sg,FALSE,FALSE
+2337,ng,kai feng,6/6/2000 0:00,Singapore,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,ACCOUNTING PROGRAMMER,kaifeng.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2338,tan,edwin,18/1/2000 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Male,199,ACCOUNTING OFFICER,edwin.tan.2022@scis.smu.edu.sg,FALSE,FALSE
+2339,Kok,Zia ,3/5/2003 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,ABBOT,zia.kok.2022@scis.smu.edu.sg,FALSE,FALSE
+2340,Chua,Clarise,6/1/2003 0:00,Hougang,Singapore,520888,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,Student,clarisechua.2022@scis.smu.edu.sg,FALSE,FALSE
+2341,Naidu,Jessa,1/1/1967 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,jessanaidu@smu.edu.sg,FALSE,FALSE
+2342,Wang,Sihua,18/7/2003 0:00,None,Singapore,400014,65,65,31/12/2099,199,IC number,API,28/8/2024 0:00,100,199,Female,199,DIGITAL PRODUCT MANAGER,sihua.wang.2022@scis.smu.edu.sg,FALSE,FALSE
+2343,Wang,Sihua,18/7/2003 0:00,None,None,400014,65,65,31/12/2099,None,IC number,API,28/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,sihua.wang.2022@scis.smu.edu.sg,FALSE,FALSE
+2344,Ng,Jing Jie,29/9/1999 0:00,Tampines,Singapore,521888,65,65,31/12/2099,199,IC number,API,29/8/2024 0:00,100,199,Male,199,Student,jingjie.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2345,Lim,Jean,24/7/2003 0:00,None,Singapore,555555,65,65,31/12/2099,199,IC number,API,30/8/2024 0:00,100,199,Female,199,Student,rianne.limje@gmail.com,FALSE,FALSE
+2346,Wang,Sihua,18/7/2003 0:00,None,Singapore,400014,65,65,31/12/2099,199,IC number,API,31/8/2024 0:00,100,199,Female,199,None,sihua.wang.2022@scis.smu.edu.sg,FALSE,FALSE
+2347,Tan,Angela ,17/1/1999 0:00,None,None,518155,65,65,31/12/2099,None,IC number,API,31/8/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,angela.tan.2022@scis.smu.edu.sg,FALSE,FALSE
+2348,Christina,Tirsa,31/1/2021 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,31/8/2024 0:00,100,199,Female,199,Student,tchristina.2022@scis.smu.edu.sg,FALSE,FALSE
+2349,Doe,John,14/8/2024 0:00,Ang Mo Kio,Singapore,123456,65,65,31/12/2099,199,IC number,API,1/9/2024 0:00,100,199,Male,199,ABBOT,shawn.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2350,Doe,John,9/7/2024 0:00,Downtown Core,Singapore,188613,65,65,31/12/2099,199,IC number,API,1/9/2024 0:00,100,199,Male,199,ABLE SEAMAN,shawn.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2351,De Saram,Randika,10/3/2004 0:00,None,None,114600,65,65,31/12/2099,None,IC number,API,1/9/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,brsaram.2022@scis.smu.edu.sg,FALSE,FALSE
+2352,De Saram,Randika,10/3/2004 0:00,None,None,114600,65,65,31/12/2099,None,IC number,API,1/9/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,brsaram.2022@scis.smu.edu.sg,FALSE,FALSE
+2353,Christina,Tirsa ,1/1/2019 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,1/9/2024 0:00,100,199,Female,199,Student,tchristina.2022@scis.smu.edu.sg,FALSE,FALSE
+2354,Li,Fiona,1/1/2002 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,2/9/2024 0:00,100,199,Female,199,COMPUTER SOFTWARE ENGINEER,fiona.li.2021@scis.smu.edu.sg,FALSE,FALSE
+2355,Chua,Sharon,19/10/2001 0:00,None,None,530642,65,65,31/12/2099,None,IC number,API,2/9/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,sharon.chua.2021@scis.smu.edu.sg,FALSE,FALSE
+2356,None,IS484 Team 2,1/1/1900 0:00,None,None,530642,65,65,31/12/2099,None,IC number,API,2/9/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,sharon.chua.2021@scis.smu.edu.sg,FALSE,FALSE
+2357,None,IS484 Team 2 (test),1/1/1900 0:00,None,None,530642,65,65,31/12/2099,None,IC number,API,2/9/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,sharon.chua.2021@scis.smu.edu.sg,FALSE,FALSE
+2358,Blanston,Gern,11/12/1960 0:00,Woodlands,Singapore,111111,65,65,31/12/2099,199,IC number,API,3/9/2024 0:00,100,199,Male,199,ABBOT,alanmegargel@smu.edu.sg,FALSE,FALSE
+2359,Blanston,Gern,11/12/1960 0:00,Woodlands,Singapore,111111,65,65,31/12/2099,199,IC number,API,3/9/2024 0:00,100,199,Male,199,ABLE SEAMAN,alanmegargel@smu.edu.sg,FALSE,FALSE
+2360,Blanston,Gern,11/12/1960 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,3/9/2024 0:00,100,Prefer to not say,Male,Prefer to not say,ABRASIVE WHEEL MOULDER,alanmegargel@smu.edu.sg,FALSE,FALSE
+2361,Blanston,Gern,12/12/1960 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,3/9/2024 0:00,100,Prefer to not say,Male,Prefer to not say,None,alanmegargel@smu.edu.sg,FALSE,FALSE
+2362,Blanston,Gern,11/12/1960 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,3/9/2024 0:00,100,Prefer to not say,Male,Prefer to not say,ABRASIVES MIXER,alanmegargel@smu.edu.sg,FALSE,FALSE
+2363,Blanston,Gern,11/12/1960 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,3/9/2024 0:00,100,Prefer to not say,Male,Prefer to not say,ABBOT,alanmegargel@smu.edu.sg,FALSE,FALSE
+2364,Blanston,Gern,11/12/1960 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,3/9/2024 0:00,100,Prefer to not say,Male,Prefer to not say,ABLE SEAMAN,alanmegargel@smu.edu.sg,FALSE,FALSE
+2365,Blanston,Gern,11/12/1960 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,3/9/2024 0:00,100,Prefer to not say,Male,Prefer to not say,ABBOT,alanmegargel@smu.edu.sg,FALSE,FALSE
+2366,Blanston,Gern,11/12/1960 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,3/9/2024 0:00,100,Prefer to not say,Male,Prefer to not say,ABRASIVES MIXER,alanmegargel@smu.edu.sg,FALSE,FALSE
+2367,Doe,John,3/5/1988 0:00,Downtown Core,Singapore,188613,65,65,31/12/2099,199,IC number,API,3/9/2024 0:00,100,199,Male,199,ABBOT,shawn.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2368,Doe,Jane,19/6/1985 0:00,Downtown Core,Singapore,188613,65,65,31/12/2099,199,IC number,API,3/9/2024 0:00,100,199,Female,199,ABBOT,shawn.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2369,elagnkovan,shaythuram,13/9/2000 0:00,None,Singapore,730670,65,65,31/12/2099,199,IC number,API,3/9/2024 0:00,100,199,Male,199,ADVERTISING SALESMAN,shaythurams.2021@scis.smu.edu.sg,FALSE,FALSE
+2370,Tan,Angela,18/12/2002 0:00,None,Singapore,400014,65,65,31/12/2099,199,IC number,API,4/9/2024 0:00,100,199,Female,199,DIGITAL PRODUCT MANAGER,angela.tan.2022@scis.smu.edu.sg,FALSE,FALSE
+2371,Kezia,Kezia,18/12/2001 0:00,Novena,Singapore,309061,65,65,31/12/2099,199,IC number,API,5/9/2024 0:00,100,199,Female,199,Student,kezia.2020@scis.smu.edu.sg,FALSE,FALSE
+2372,Lim,Gerald,25/11/2000 0:00,Downtown Core,Singapore,178902,65,65,31/12/2099,199,IC number,API,10/9/2024 0:00,100,199,Male,199,Student,geraldlimjw@gmail.com,FALSE,FALSE
+2373,None,Yelnats Pte Ltd,1/1/1900 0:00,None,Singapore,178902,65,65,31/12/2099,199,IC number,API,16/9/2024 0:00,200,199,Prefer to not say,199,None,stanley.ng.2020@scis.smu.edu.sg,FALSE,FALSE
+2374,None,Sharon Chua,1/1/1900 0:00,None,None,188065,65,65,31/12/2099,None,IC number,API,17/9/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,sharoncyt28@gmail.com,FALSE,FALSE
+2375,None,IS484 Team 2 (test),1/1/1900 0:00,None,None,188065,65,65,31/12/2099,None,IC number,API,17/9/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,sharoncyt28@gmail.com,FALSE,FALSE
+2376,None,Impawsible,1/1/1900 0:00,None,Singapore,500000,65,65,31/12/2099,199,IC number,API,25/9/2024 0:00,200,199,Prefer to not say,199,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2377,None,Impawsible,1/1/1900 0:00,None,None,500000,65,65,31/12/2099,None,IC number,API,26/9/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2378,None,test corp 1,1/1/1900 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,27/9/2024 0:00,200,199,Prefer to not say,199,None,alanmegargel@smu.edu.sg,FALSE,FALSE
+2379,None,test corp 1,1/1/1900 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,27/9/2024 0:00,200,199,Prefer to not say,199,None,alanmegargel@smu.edu.sg,FALSE,FALSE
+2380,Megargel,Alan,11/9/2024 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,27/9/2024 0:00,100,199,Male,199,ABBOT,alanmegargel@smu.edu.sg,FALSE,FALSE
+2381,Megargel,Alan,5/9/2024 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,27/9/2024 0:00,100,199,Male,199,ABLE SEAMAN,alanmegargel@smu.edu.sg,FALSE,FALSE
+2382,Megargel,Alan,5/9/2024 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,28/9/2024 0:00,100,199,Male,199,ABRASIVE WHEEL MOULDER,alanmegargel@smu.edu.sg,FALSE,FALSE
+2383,None,IS484 Team 2,1/1/1900 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,8/10/2024 0:00,200,199,Prefer to not say,199,None,sharoncyt28@gmail.com,FALSE,FALSE
+2384,None,Alexis Ltd,1/1/1900 0:00,Singapore,Singapore,178903,65,65,31/12/2099,199,IC number,API,11/10/2024 0:00,200,199,Prefer to not say,199,None,limjoowei@yahoo.com.sg,FALSE,FALSE
+2385,None,qq,1/1/1900 0:00,None,None,222222,65,65,31/12/2099,None,IC number,API,16/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,bibij@gmail.com,FALSE,FALSE
+2386,DBS TestUser,Ma,19/9/1998 0:00,Kallang,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,19/10/2024 0:00,100,Singapore,Male,Singapore,None,nz5@test.com,FALSE,FALSE
+2387,Test,Ma,3/11/1999 0:00,Marine Parade,Singapore,610712,65,65,31/12/2099,Singapore,IC number,API,19/10/2024 0:00,200,Singapore,Male,Singapore,None,n6@test.com,FALSE,FALSE
+2396,None,Singapore Management University,1/1/1900 0:00,None,None,753365,65,65,31/12/2099,None,IC number,API,22/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,yaodong.kua.2021@scis.smu.edu.sg,FALSE,FALSE
+2397,None,NTUC Fairprice Co-operative Limited ,1/1/1900 0:00,None,Singapore,629117,65,65,31/12/2099,199,IC number,API,29/10/2024 0:00,200,199,Prefer to not say,199,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2398,None,NTUC Fairprice Co-operative Limited ,1/1/1900 0:00,None,None,629117,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2399,None,NTUC Fairprice Co-operative Limited ,1/1/1900 0:00,None,None,629117,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2400,None,Singapore Management University,1/1/1900 0:00,None,None,188065,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2401,None,Singapore Management University,1/1/1900 0:00,None,None,188065,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2402,None,Singapore Management University,1/1/1900 0:00,None,None,188065,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2403,None,SEA Pte. Ltd.,1/1/1900 0:00,None,None,658065,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2404,None,SEA Pte. Ltd.,1/1/1900 0:00,None,None,658065,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2405,None,SEA Pte. Ltd.,1/1/1900 0:00,None,None,658065,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2406,None,NIL,1/1/1900 0:00,None,None,188065,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,huimin.poh.2021@scis.smu.edu.sg,FALSE,FALSE
+2407,None,Grabcar Pte. Ltd.,1/1/1900 0:00,None,None,138498,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2408,None,Grabcar Pte. Ltd.,1/1/1900 0:00,None,None,138498,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2409,None,OCK Construction Pte Ltd,1/1/1900 0:00,None,None,339407,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2410,None,OCK Construction Pte Ltd,1/1/1900 0:00,None,None,339407,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2411,None,OCK Construction Pte Ltd,1/1/1900 0:00,None,None,339407,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2412,None,Target Corporation,1/1/1900 0:00,None,None,309565,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2413,None,Target Corporation,1/1/1900 0:00,None,None,309565,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2414,None,Target Corporation,1/1/1900 0:00,None,None,309565,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2415,None,CAPITALAND GROUP PTE. LTD.,1/1/1900 0:00,None,None,68912,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2416,None,CAPITALAND GROUP PTE. LTD.,1/1/1900 0:00,None,None,68912,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2417,None,CAPITALAND GROUP PTE. LTD.,1/1/1900 0:00,None,None,68912,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2418,None,Singapore Management University,1/1/1900 0:00,None,None,753365,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2419,None,Singapore Management University,1/1/1900 0:00,None,None,753365,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2420,None,NTUC Fairprice Co-operative Limited ,1/1/1900 0:00,None,None,600000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2421,None,NTUC Fairprice Co-operative Limited ,1/1/1900 0:00,None,None,600000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2422,None,Singapore Management University,1/1/1900 0:00,None,None,500000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2423,None,Singapore Management University,1/1/1900 0:00,None,None,500000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2424,None,Singapore Management University,1/1/1900 0:00,None,None,500000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2425,None,SEA Pte. Ltd.,1/1/1900 0:00,None,None,400000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2426,None,SEA Pte. Ltd.,1/1/1900 0:00,None,None,400000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2427,None,SEA Pte. Ltd.,1/1/1900 0:00,None,None,400000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2428,None,Grabcar Pte. Ltd.,1/1/1900 0:00,None,None,300000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2429,None,Grabcar Pte. Ltd.,1/1/1900 0:00,None,None,300000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2430,None,Grabcar Pte. Ltd.,1/1/1900 0:00,None,None,300000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2431,None,OCK Construction Pte Ltd,1/1/1900 0:00,None,None,200000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2432,None,OCK Construction Pte Ltd,1/1/1900 0:00,None,None,300000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2433,None,OCK Construction Pte Ltd,1/1/1900 0:00,None,None,200000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2434,None,Target Corporation,1/1/1900 0:00,None,None,100000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2435,None,Target Corporation,1/1/1900 0:00,None,None,100000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2436,None,Target Corporation,1/1/1900 0:00,None,None,100000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2437,None,CAPITALAND GROUP PTE. LTD.,1/1/1900 0:00,None,None,700000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2438,None,CAPITALAND GROUP PTE. LTD.,1/1/1900 0:00,None,None,700000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2439,None,CAPITALAND GROUP PTE. LTD.,1/1/1900 0:00,None,None,700000,65,65,31/12/2099,None,IC number,API,29/10/2024 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2440,doe,john ,5/3/2003 0:00,Singapore,Singapore,123456,6587534490,6587534490,31/12/2099,199,IC number,API,30/10/2024 0:00,100,199,Male,199,ABBOT,johndoe@example.com,FALSE,FALSE
+2441,smith,jane,5/3/2003 0:00,Singapore,Singapore,651293,65,65,31/12/2099,199,IC number,API,31/10/2024 0:00,100,199,Female,199,ABBOT,janesmith@example.com,FALSE,FALSE
+2442,Siah,Rae,3/7/2000 0:00,Hougang,Singapore,470147,65,65,31/12/2099,199,IC number,API,3/11/2024 0:00,100,199,Male,199,DRUGGIST,rowaynesiah.2022@scis.smu.edu.sg,FALSE,FALSE
+2443,tan,taz,28/12/2004 0:00,None,None,111111,65,65,31/12/2099,None,IC number,API,8/11/2024 0:00,100,Prefer to not say,Female,Prefer to not say,None,taz@gmail.com,FALSE,FALSE
+2448,Sim,Simi,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi@gmail.com,FALSE,FALSE
+2449,Sim,Simi2,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2450,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2451,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2452,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2453,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2454,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2455,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2456,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2457,Tan,Jessica,14/5/1992 0:00,Singapore,Singapore,345678,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,Individual,Singapore,Female,Singapore,Software Engineer,jessica.tan@example.com,FALSE,FALSE
+2458,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2459,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2460,Sim,Simi4,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi4@gmail.com,FALSE,FALSE
+2461,Sim,Simi5,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi5@gmail.com,FALSE,FALSE
+2462,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2463,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2464,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2465,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2466,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,9/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2467,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,10/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2468,Sim,Simi6,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,10/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi6@gmail.com,FALSE,FALSE
+2469,Sim,Simi3,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,10/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi2@gmail.com,FALSE,FALSE
+2470,Sim,Simi7,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,10/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi7@gmail.com,FALSE,FALSE
+2471,Ng,John,22/11/1985 0:00,Singapore,Singapore,238879,65,65,31/12/2099,Singapore,IC number,API,10/11/2024 0:00,Corporate,Singapore,Male,Singapore,Financial Analyst,john.ng@example.com,FALSE,FALSE
+2472,Doe,John,13/11/1999 0:00,None,None,636363,65,65,31/12/2099,None,IC number,API,11/11/2024 0:00,100,Prefer to not say,Male,Prefer to not say,ABLE SEAMAN,damon.wong.2022@scis.smu.edu.sg,FALSE,FALSE
+2473,Doe,John,1/11/2000 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,11/11/2024 0:00,100,199,Male,199,ABLE SEAMAN,damon.wong.2022@scis.smu.edu.sg,FALSE,FALSE
+2474,Doe,John,1/11/2000 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,11/11/2024 0:00,100,199,Male,199,ABLE SEAMAN,damon.wong.2022@scis.smu.edu.sg,FALSE,FALSE
+2475,Doe,Jane,1/11/1999 0:00,None,Singapore,188065,65,65,31/12/2099,199,IC number,API,11/11/2024 0:00,100,199,Female,199,ABLE SEAMAN,damon.wong.2022@scis.smu.edu.sg,FALSE,FALSE
+2476,Lee,Janette Lee ,10/7/1980 0:00,None,Singapore,520455,65,65,31/12/2099,199,IC number,API,12/11/2024 0:00,100,199,Female,199,None,minweiah585@gmail.com,FALSE,FALSE
+2477,Tan,Mary,1/1/2006 0:00,Singapore,Singapore,123456,65,65,31/12/2099,199,IC number,API,12/11/2024 0:00,100,199,Female,199,AIRCRAFT CABIN CLEANER,shihui.ho.2022@scis.smu.edu.sg,FALSE,FALSE
+2478,Ong,David,1/1/1969 0:00,Singapore,Singapore,234567,65,65,31/12/2099,199,IC number,API,12/11/2024 0:00,100,199,Male,199,ACTOR,jingjie.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2481,Lim,Janice,1/1/1979 0:00,Singapore,Singapore,345678,65,65,31/12/2099,199,IC number,API,12/11/2024 0:00,100,199,Female,199,INFORMATION TECHNOLOGY (IT) FIELD ENGINEER,taz.ng.2022@scis.smu.edu.sg,FALSE,FALSE
+2482,Tan,Benedict,1/1/1959 0:00,Singapore,Singapore,456789,65,65,31/12/2099,199,IC number,API,12/11/2024 0:00,100,199,Male,199,DOCTOR (GENERAL MEDICAL PRACTICE),clarisechua.2022@scis.smu.edu.sg,FALSE,FALSE
+2483,Doe,John,31/12/2014 0:00,Sample City,Sampleland,123456,65,65,31/12/2099,Sampleland,IC number,API,12/11/2024 0:00,Individual,Sampleland,Male,Sampleland,Software Engineer,johndoe@example.com,FALSE,FALSE
+2484,Sim,Simi8,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,12/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi6@gmail.com,FALSE,FALSE
+2485,Sim,Simi9,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,12/11/2024 0:00,100,Singapore,Male,Singapore,student,simsimi9@gmail.com,FALSE,FALSE
+2486,pim,ppimi7,31/12/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,Singapore,IC number,API,12/11/2024 0:00,100,Singapore,Male,Singapore,student,smsimi7@gmail.com,FALSE,FALSE
+2487,Chiluveru,Sathwik,30/9/2002 0:00,Singapore,Singapore,321016,65,65,31/12/2099,Singapore,IC number,API,12/11/2024 0:00,100,Singapore,Male,Singapore,Student,sathwikchiluveru@gmail.com,FALSE,FALSE
+2488,Chiluveru,Sathwik,30/9/2002 0:00,Singapore,Singapore,321016,65,65,31/12/2099,Singapore,IC number,API,12/11/2024 0:00,100,Singapore,Male,Singapore,Student,sathwikhack@gmail.com,FALSE,FALSE
+2489,rhrhb,hbrvhbvrhbr,1/1/2001 0:00,Singapore,Singapore,321016,65,65,31/12/2099,Singapore,IC number,API,12/11/2024 0:00,100,Singapore,Male,Singapore,bhvhvbrh,dylanchua@gmail.com,FALSE,FALSE
+2490,Jeff,Testing Profile,12/11/2024 0:00,None,None,600000,65,65,31/12/2099,None,IC number,API,12/11/2024 0:00,100,Prefer to not say,Male,Prefer to not say,Student,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2493,None,NTUC Fairprice Co-operative Limited ,1/1/1900 0:00,None,Singapore,600000,65,65,31/12/2099,199,IC number,API,31/12/2024 0:00,200,199,Prefer to not say,199,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2494,None,Alan Corp,1/1/1900 0:00,Woodlands,Singapore,737937,65,65,31/12/2099,199,IC number,API,5/1/2025 0:00,200,199,Prefer to not say,199,None,alanmegargel@smu.edu.sg,FALSE,FALSE
+2495,Zhou,Jeffry,25/8/2000 0:00,None,None,579979,65,65,31/12/2099,None,IC number,API,21/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2496,Zhou,Jeffry,25/8/2000 0:00,None,None,556430,65,65,31/12/2099,None,IC number,API,21/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2497,YAP,SHUN LER,6/5/2000 0:00,Sengkang,Singapore,543282,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,Student,shunler.yap.2022@scis.smu.edu.sg,FALSE,FALSE
+2498,Lum,Wen Xiang,3/9/1999 0:00,Singapore,Singapore,570330,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,None,wxlum.2022@scis.smu.edu.sg,FALSE,FALSE
+2499,Lum,Wen Xiang,3/9/1999 0:00,Singapore,Singapore,570233,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,None,wxlum.2022@scis.smu.edu.sg,FALSE,FALSE
+2500,Ye di,Joe,1/7/1988 0:00,Yishun,Singapore,776098,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Female,199,ADVERTISING MODEL,joeye.2021@scis.smu.edu.sg,FALSE,FALSE
+2501,Al,Maliki,2/1/2000 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,PROFESSOR,muhammadm.2022@scis.smu.edu.sg,FALSE,FALSE
+2502,Al,Maliki,1/1/2000 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,PROFESSOR,muhammadm.2022@scis.smu.edu.sg,FALSE,FALSE
+2503,Zhou,Jeffry,25/8/2000 0:00,None,None,600000,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2504,Ye di,Joe,1/11/2000 0:00,Marine Parade,Singapore,767791,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Female,199,ADVERTISING MODEL,joeye.2021@scis.smu.edu.sg,FALSE,FALSE
+2505,See,Nathaniel,13/3/1980 0:00,Downtown Core,Singapore,801234,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,ABBOT,natseew@gmail.com,FALSE,FALSE
+2506,Al,Maliki,1/1/2000 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,PROFESSOR,muhammadm.2022@scis.smu.edu.sg,FALSE,FALSE
+2507,None,smubank,1/1/1900 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,200,Prefer to not say,Prefer to not say,Prefer to not say,None,custy1@scis.smu.edu.sg,FALSE,FALSE
+2508,Two,Member,1/1/2000 0:00,None,None,181818,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Female,Prefer to not say,None,member2_lab1@gmail.com,FALSE,FALSE
+2509,Robber,Bank,15/1/2001 0:00,None,None,1,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,CLADDING WALL ERECTOR,williamtanjuinwei@gmail.com,FALSE,FALSE
+2510,How,Alison,19/4/2001 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Female,Prefer to not say,None,alison.how.2021@scis.smu.edu.sg,FALSE,FALSE
+2511,customer_member1,Customer_member1,22/1/2003 0:00,Downtown Core,Singapore,277973,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,ACCOUNTING ANALYST (EXCLUDING TAX),random@gmail.com,FALSE,FALSE
+2512,Family Name,Wei Xuan,22/1/2003 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,wxchin.2022@scis.smu.edu.sg,FALSE,FALSE
+2513,Gui,Jia Qing,6/9/2024 0:00,Woodlands,Singapore,712308,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,Student,jiaqing.gui.2022@scis.smu.edu.sg,FALSE,FALSE
+2514,Kai Ern,Kai Ern,22/1/2000 0:00,Punggol,Singapore,821169,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,Student,tke4974652@gmail.com,FALSE,FALSE
+2515,Gui,Jia Qing,1/1/2000 0:00,Singapore,Singapore,123456,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,None,jiaqing.gui.2022@scis.smu.edu.sg,FALSE,FALSE
+2516,man,jiahao,2/3/2001 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,jiahao.man.2022@scis.smu.edu.sg,FALSE,FALSE
+2517,Qiu,Linhan,27/4/2000 0:00,None,None,821438,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Female,Prefer to not say,None,linhan.qiu.2022@scis.smu.edu.sg,FALSE,FALSE
+2518,toh,denzel,19/12/1999 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,custyretail1@scis.smu.edu.sg,FALSE,FALSE
+2519,Lim,Hang hang ,24/5/2000 0:00,None,None,460121,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,jhlim.2022@scis.smu.edu.sg,FALSE,FALSE
+2520,Ong,Han Wei,4/3/2000 0:00,None,None,669557,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,hanwei.ong.2022@scis.smu.edu.sg,FALSE,FALSE
+2521,Zheng,Yuting,23/12/2000 0:00,Woodlands,Singapore,350123,6591234567,6591234567,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Female,199,Student,ytzheng.2022@scis.smu.edu.sg,FALSE,FALSE
+2522,Tan,Nicholas,7/3/2000 0:00,Orchard Road,Singapore,238801,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,None,xyukimiku@gmail.com,FALSE,FALSE
+2523,Dinomaniam,Anan,21/3/2002 0:00,Singapore,Singapore,123456,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,Student,anandm.2022@scis.smu.edu.sg,FALSE,FALSE
+2524,Yeo,Jun Wei,25/11/2000 0:00,Geylang,Singapore,560444,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Female,199,AIKIDO INSTRUCTOR,junwei.yeo.2022@scis.smu.edu.sg,FALSE,FALSE
+2525,Vinod,Saieesh,1/1/1997 0:00,None,None,188065,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,Student,saieeshv.2022@scis.smu.edu.sg,FALSE,FALSE
+2526,liew123,martin086,22/1/2000 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,martin.liu.2021@scis.smu.edu.sg,FALSE,FALSE
+2527,Leow,Gerald,10/2/1999 0:00,None,Singapore,760410,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,BUSINESS PROJECT MANAGER,gerald.leow.2022@scis.smu.edu.sg,FALSE,FALSE
+2528,Zheng,Yuting,1/1/2000 0:00,Bukit Timah,Singapore,350120,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Singapore,Female,Singapore,student,ytzheng.2022@scis.smu.edu.sg,FALSE,FALSE
+2529,Tan,Chin Ler,14/12/2003 0:00,Woodlands,Singapore,684687,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,Singapore,Female,Singapore,Student,chinler.tan.2022@scis.smu.edu.sg,FALSE,FALSE
+2530,Prince,Awesome,31/10/2000 0:00,Orchard Road,Singapore,178902,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,AGRICULTURIST,chihao.seah.2022@scis.smu.edu.sg,FALSE,FALSE
+2531,Lee,Gwen,6/12/2003 0:00,Hougang,Singapore,512123,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Female,199,ARTIST (PAINTING),ziyou.foo.2022@scis.smu.edu.sg,FALSE,FALSE
+2532,Tan,Yang Fu,2/2/2001 0:00,Woodlands,Singapore,730123,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,Student,yangfu.tan.2022@scis.smu.edu.sg,FALSE,FALSE
+2533,toh,denzel,19/12/1999 0:00,None,None,123456,65,65,31/12/2099,None,IC number,API,22/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,denzel.toh.2022@scis.smu.edu.sg,FALSE,FALSE
+2534,Dinomaniam,Anan,5/6/1985 0:00,None,Singapore,123456,65,65,31/12/2099,199,IC number,API,22/1/2025 0:00,100,199,Male,199,Student,anandm.2022@scis.smu.edu.sg,FALSE,FALSE
+2546,Zhou,Jeffry,25/8/2000 0:00,None,None,600000,65,65,31/12/2099,None,IC number,API,24/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,None,jeffryzhou.2021@scis.smu.edu.sg,FALSE,FALSE
+2547,Suuu,Boossku,10/2/2000 0:00,Singapore,Singapore,232312,65,65,31/12/2099,199,IC number,API,24/1/2025 0:00,100,199,Male,199,ADVANCED SOFTWARE ENGINEER,sean.teo.2021@scis.smu.edu.sg,FALSE,FALSE
+2548,hee,joseph,1/7/2000 0:00,Singapore,Singapore,760360,65,65,31/12/2099,199,IC number,API,24/1/2025 0:00,100,199,Male,199,ABBOT,joseph.hee.2021@smu.edu.sg,FALSE,FALSE
+2549,hee,joseph,1/7/2000 0:00,Singapore,Singapore,760360,65,65,31/12/2099,199,IC number,API,24/1/2025 0:00,100,199,Male,199,ABBOT,joseph.hee.2021@smu.edu.sg,FALSE,FALSE
+2550,hee,joseph,1/7/2000 0:00,None,None,760360,65,65,31/12/2099,None,IC number,API,24/1/2025 0:00,100,Prefer to not say,Male,Prefer to not say,ABBOT,joseph.hee.2021@smu.edu.sg,FALSE,FALSE
+2551,None,SEA Pte. Ltd.,1/1/1900 0:00,None,Singapore,409051,65,65,31/12/2099,199,IC number,API,4/2/2025 0:00,200,199,Prefer to not say,199,None,jeffryzhou.2021@scis.smu.edu.sg,TRUE,FALSE
+2552,None,NTUC Fairprice Co-operative Limited,1/1/1900 0:00,None,Singapore,629117,65,65,31/12/2099,199,IC number,API,5/2/2025 0:00,200,199,Prefer to not say,199,None,jeffryzhou.2021@scis.smu.edu.sg,TRUE,TRUE

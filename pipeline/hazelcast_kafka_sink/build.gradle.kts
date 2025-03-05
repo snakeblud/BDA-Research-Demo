@@ -22,6 +22,7 @@ dependencies {
     implementation("com.hazelcast:hazelcast-sql:5.5.0")
 
     implementation("org.apache.kafka:kafka-clients:3.9.0")
+    implementation("org.apache.kafka:connect-json:3.9.0")
 
     implementation("org.slf4j:slf4j-api:2.0.16")
     implementation("org.slf4j:slf4j-simple:2.0.16")
