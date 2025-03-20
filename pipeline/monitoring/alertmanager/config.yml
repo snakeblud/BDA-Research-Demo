@@ -1,29 +1,37 @@
 global:
-  resolve_timeout: 5m
-  # Gmail SMTP settings - update these with your own email credentials
   smtp_smarthost: 'smtp.gmail.com:587'
-  smtp_from: 'your-gmail@gmail.com'
-  smtp_auth_username: 'your-gmail@gmail.com'
-  smtp_auth_password: 'your-app-password'  # Generate an app password if you have 2FA enabled
+  smtp_from: ''
+  smtp_auth_username: ''
+  smtp_auth_password: ''
   smtp_require_tls: true
 
 route:
-  group_by: ['alertname', 'component']
-  group_wait: 10s
-  group_interval: 1m
+  group_by: ['alertname']
+  group_wait: 30s
+  group_interval: 5m
   repeat_interval: 1h
-  receiver: 'email-notifications'
+  receiver: 'default-team'  # Default receiver
+
+  routes:
+    - match:
+        service: kafka-broker
+      receiver: 'kafka-team'
+    - match:
+        service: postgresql
+      receiver: 'database-team'
 
 receivers:
-- name: 'email-notifications'
-  email_configs:
-  - to: 'your-recipient-email@example.com'
-    send_resolved: true
+  - name: 'default-team'
+    email_configs:
+      - to: ''
+        send_resolved: true
 
-inhibit_rules:
-  # Suppress warnings if there's already a critical alert for the same service
-  - source_match:
-      severity: 'critical'
-    target_match:
-      severity: 'warning'
-    equal: ['service']
+  - name: 'kafka-team'
+    email_configs:
+      - to: 'weiting.lee.2022@scis.smu.edu.sg'
+        send_resolved: true
+
+  - name: 'database-team'
+    email_configs:
+      - to: 'clwt@outlook.sg'
+        send_resolved: true

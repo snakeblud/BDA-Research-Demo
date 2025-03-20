@@ -212,6 +212,15 @@ services:
       GF_INSTALL_PLUGINS: grafana-piechart-panel,grafana-worldmap-panel,grafana-clock-panel
       # Enable provisioning
       GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /var/lib/grafana/dashboards/kafka-stack-dashboard.json
+
+      GF_SMTP_ENABLED: "true"
+      GF_SMTP_HOST: "smtp.gmail.com:587"
+      GF_SMTP_USER: ""
+      GF_SMTP_PASSWORD: ""
+      GF_SMTP_FROM_ADDRESS: ""
+      GF_SMTP_FROM_NAME: "Grafana Alerts"
+      GF_SMTP_STARTTLS_POLICY: "mandatory"
+
     ports:
       - "3000:3000"
     volumes:
@@ -232,6 +241,7 @@ services:
     command:
       - '--config.file=/etc/blackbox_exporter/config.yml'
 
+  # Replace grafana-oncall, oncall-redis, and oncall-db with these services
   alertmanager:
     image: prom/alertmanager:latest
     container_name: alertmanager
@@ -244,6 +254,10 @@ services:
     command:
       - '--config.file=/etc/alertmanager/config.yml'
       - '--storage.path=/alertmanager'
+    networks:
+      - default
+
+
 
 networks:
   hazelcast:

@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cd9768f-6de4-467e-814f-ac48d1e92922" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/metrics/KafkaMetricsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/power_bi/HealthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/grafana/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/grafana/dashboards/dashboard.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/grafana/dashboards/kafka-stack-dashboard.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/debezium/create_connector.sh" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/debezium/create_connector.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/src/main/java/org/lurence/JetJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/src/main/java/org/lurence/JetJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/MessageConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/MessageConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/monitoring/alertmanager/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/monitoring/alertmanager/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/monitoring/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/monitoring/prometheus/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
