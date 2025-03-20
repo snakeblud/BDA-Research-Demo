@@ -14,9 +14,10 @@ import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
 import org.apache.kafka.clients.admin.NewTopic;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.connect.json.JsonSerializer;
-import org.apache.kafka.connect.json.JsonDeserializer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Collections;
@@ -57,29 +58,43 @@ public class JetJob {
                 ")")) {
             // The statement has been executed, no need to process any result for DDL
             System.out.println("Mapping created successfully");
+        } catch (Exception e) {
+            System.err.println("Error creating mapping: " + e.getMessage());
+            e.printStackTrace();
         }
 
         Pipeline p = Pipeline.create();
 
-        StreamStage<Map.Entry<Object, Object>> stream = p.readFrom(
-                    KafkaSources.kafka(kafkaProps(),
-                    "is484.public.tbank_cleaned"
-                ))
-                        .withNativeTimestamps(0);
+        // Print debug info about Kafka properties
+        Properties kafkaConsumerProps = kafkaProps();
+        System.out.println("Kafka Consumer Properties:");
+        kafkaConsumerProps.forEach((k, v) -> System.out.println(k + "=" + v));
 
-        Properties properties = kafkaSinkProps();
+        StreamStage<Map.Entry<Object, Object>> stream = p.readFrom(
+                        KafkaSources.kafka(kafkaConsumerProps,
+                                "is484.public.tbank_cleaned"
+                        ))
+                .withNativeTimestamps(0);
+
+        Properties kafkaProducerProps = kafkaSinkProps();
+        System.out.println("Kafka Producer Properties:");
+        kafkaProducerProps.forEach((k, v) -> System.out.println(k + "=" + v));
 
         stream.writeTo(Sinks.map("roles_map"));
         stream.writeTo(Sinks.logger());
-        stream.writeTo(KafkaSinks.kafka(properties, "powerbi-stream"));
+        stream.writeTo(KafkaSinks.kafka(kafkaProducerProps, "powerbi-stream"));
 
         JobConfig cfg = new JobConfig()
                 .setName("kafka-traffic-monitor")
                 .addClass(JetJob.class);
 
-        hz.getJet().newJob(p, cfg);
-
-        System.out.println("Job Config Complete!");
+        try {
+            hz.getJet().newJob(p, cfg);
+            System.out.println("Job Config Complete!");
+        } catch (Exception e) {
+            System.err.println("Error starting Jet job: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     private static Properties kafkaSinkProps() {
@@ -87,8 +102,8 @@ public class JetJob {
 
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
-        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, JsonSerializer.class.getCanonicalName());
-        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class.getCanonicalName());
+        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getCanonicalName());
+        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getCanonicalName());
         properties.setProperty(ProducerConfig.ACKS_CONFIG, "all");
         properties.setProperty(ProducerConfig.RETRIES_CONFIG, "3");
         properties.setProperty(ProducerConfig.LINGER_MS_CONFIG, "5");
@@ -118,11 +133,13 @@ public class JetJob {
 
     private static Properties kafkaProps() {
         Properties props = new Properties();
-        props.setProperty("bootstrap.servers", "kafka:9092");
-        props.setProperty("key.deserializer", JsonDeserializer.class.getCanonicalName());
-        props.setProperty("value.deserializer", JsonDeserializer.class.getCanonicalName());
-        props.setProperty("auto.offset.reset", "earliest");
-
+        props.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
+        props.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getCanonicalName());
+        props.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getCanonicalName());
+        props.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        props.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "hazelcast-jet-consumer");
+        props.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, "500");
+        props.setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "true");
         return props;
     }
 }

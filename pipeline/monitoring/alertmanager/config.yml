@@ -1,0 +1,29 @@
+global:
+  resolve_timeout: 5m
+  # Gmail SMTP settings - update these with your own email credentials
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'your-gmail@gmail.com'
+  smtp_auth_username: 'your-gmail@gmail.com'
+  smtp_auth_password: 'your-app-password'  # Generate an app password if you have 2FA enabled
+  smtp_require_tls: true
+
+route:
+  group_by: ['alertname', 'component']
+  group_wait: 10s
+  group_interval: 1m
+  repeat_interval: 1h
+  receiver: 'email-notifications'
+
+receivers:
+- name: 'email-notifications'
+  email_configs:
+  - to: 'your-recipient-email@example.com'
+    send_resolved: true
+
+inhibit_rules:
+  # Suppress warnings if there's already a critical alert for the same service
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['service']

@@ -21,6 +21,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter:3.4.3")
 	implementation("org.springframework.boot:spring-boot-starter-web:3.4.3")
 
+	// Add Actuator and Prometheus dependencies
+	implementation("org.springframework.boot:spring-boot-starter-actuator:3.4.3")
+	implementation("io.micrometer:micrometer-registry-prometheus")
+
 	implementation("org.springframework.kafka:spring-kafka:3.3.3")
 
 	implementation("org.apache.kafka:connect-json:3.9.0")

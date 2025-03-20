@@ -1,0 +1,101 @@
+groups:
+- name: kafka_alerts
+  rules:
+  - alert: ServiceDown
+    expr: probe_success == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Service {{ $labels.service }} is down"
+      description: "{{ $labels.service }} has been down for more than 1 minute."
+
+  - alert: KafkaBrokerDown
+    expr: probe_success{service="kafka-broker"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Kafka broker is down"
+      description: "The Kafka broker has been down for more than 1 minute. Data ingestion is likely impacted."
+
+  - alert: ZookeeperDown
+    expr: probe_success{service="zookeeper"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Zookeeper is down"
+      description: "Zookeeper has been down for more than 1 minute. Kafka coordination may be impacted."
+
+  - alert: KafkaConnectDown
+    expr: probe_success{service="kafka-connect"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Kafka Connect is down - Data Ingestion Halted"
+      description: "Kafka Connect has been down for more than 1 minute. This will stop data ingestion from the source database."
+
+  - alert: SchemaRegistryDown
+    expr: probe_success{service="schema-registry"} == 0
+    for: 1m
+    labels:
+      severity: high
+    annotations:
+      summary: "Schema Registry is down"
+      description: "Schema Registry has been down for more than 1 minute. This may affect data serialization/deserialization."
+
+  - alert: DatabaseDown
+    expr: probe_success{service="postgresql"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Database is down - Data Source Unavailable"
+      description: "The PostgreSQL database has been down for more than 1 minute. This will prevent new data from being captured."
+
+  - alert: PowerBIBridgeDown
+    expr: probe_success{service="kafka-power-bi-bridge"} == 0
+    for: 1m
+    labels:
+      severity: high
+    annotations:
+      summary: "Kafka Power BI Bridge is down"
+      description: "The Kafka Power BI Bridge has been down for more than 1 minute. Data will not be available to Power BI."
+
+  - alert: HazelcastKafkaDown
+    expr: probe_success{service="hazelcast-kafka"} == 0
+    for: 1m
+    labels:
+      severity: high
+    annotations:
+      summary: "Hazelcast-Kafka connection is down"
+      description: "The Hazelcast to Kafka connection has been down for more than 1 minute. Real-time analytics may be affected."
+
+  - alert: HazelcastDashboardDown
+    expr: probe_success{service="hazelcast-dashboard"} == 0
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Hazelcast Dashboard is down"
+      description: "The Hazelcast Management Dashboard has been down for more than 1 minute."
+
+  - alert: SlowResponseTime
+    expr: probe_duration_seconds > 1
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Slow response from {{ $labels.service }}"
+      description: "{{ $labels.service }} is responding slowly (>1s) for more than 5 minutes, which may indicate performance issues."
+
+  - alert: DataPipelineBreak
+    expr: (probe_success{service="kafka-broker"} == 1 and probe_success{service="kafka-connect"} == 0) or (probe_success{service="postgresql"} == 1 and probe_success{service="kafka-connect"} == 0)
+    for: 2m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Data Pipeline Break Detected"
+      description: "A critical break in the data pipeline has been detected. Data from the database is not flowing to Kafka."

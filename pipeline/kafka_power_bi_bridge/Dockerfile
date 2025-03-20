@@ -10,6 +10,9 @@ COPY gradle gradle
 COPY build.gradle.kts .
 COPY settings.gradle.kts .
 
+RUN chmod +x ./gradlew
+
+
 # Copy the source code
 COPY src src
 

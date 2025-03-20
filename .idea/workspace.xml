@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cd9768f-6de4-467e-814f-ac48d1e92922" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/metrics/KafkaMetricsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/power_bi/HealthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/grafana/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/grafana/dashboards/dashboard.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/grafana/dashboards/kafka-stack-dashboard.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/monitoring/prometheus/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/debezium/create_connector.sh" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/debezium/create_connector.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/src/main/java/org/lurence/JetJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink/src/main/java/org/lurence/JetJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/MessageConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/java/org/lurence/kafka_power_bi_bridge/kafka/MessageConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/pipeline/hazelcast_kafka_sink">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/pipeline/kafka_power_bi_bridge">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "chris",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pipeline/monitoring/grafana/dashboards" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="KafkaPowerBiBridgeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="kafka_power_bi_bridge.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.lurence.kafka_power_bi_bridge.KafkaPowerBiBridgeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>

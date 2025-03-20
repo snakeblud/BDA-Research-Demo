@@ -1,0 +1,169 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+
+# Load alert rules
+rule_files:
+  - /etc/prometheus/alert_rules.yml
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+# Define reusable scrape configs
+scrape_configs:
+  # Monitoring tools themselves
+  - job_name: 'monitoring-tools'
+    honor_labels: true
+    static_configs:
+      - targets: ['prometheus:9090']
+        labels:
+          service: 'prometheus'
+          component: 'monitoring'
+      - targets: ['grafana:3000']
+        labels:
+          service: 'grafana'
+          component: 'monitoring'
+      - targets: ['blackbox-exporter:9115']
+        labels:
+          service: 'blackbox-exporter'
+          component: 'monitoring'
+      - targets: ['alertmanager:9093']
+        labels:
+          service: 'alertmanager'
+          component: 'monitoring'
+
+  # Kafka ecosystem - HTTP endpoint checks
+  - job_name: 'kafka-http-endpoints'
+    metrics_path: /probe
+    params:
+      module: [http_2xx]
+    static_configs:
+      - targets:
+        - 'kafka-connect:8083/connectors'
+        labels:
+          service: 'kafka-connect'
+          component: 'kafka'
+          endpoint: 'connectors'
+      - targets:
+        - 'kafka-rest:8082/topics'
+        labels:
+          service: 'kafka-rest'
+          component: 'kafka'
+          endpoint: 'topics'
+      - targets:
+        - 'schema-registry:8081/subjects'
+        labels:
+          service: 'schema-registry'
+          component: 'kafka'
+          endpoint: 'subjects'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
+
+  # Kafka ecosystem - TCP connectivity checks
+  - job_name: 'kafka-tcp-checks'
+    metrics_path: /probe
+    params:
+      module: [tcp_connect]
+    static_configs:
+      - targets:
+        - 'kafka:9092'
+        labels:
+          service: 'kafka-broker'
+          component: 'kafka'
+      - targets:
+        - 'zookeeper:2181'
+        labels:
+          service: 'zookeeper'
+          component: 'kafka'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
+
+  # Application checks
+  - job_name: 'application-health-tcp'
+    metrics_path: /probe
+    params:
+      module: [tcp_connect]
+    static_configs:
+      - targets:
+        - 'kpb_bridge:8080'
+        labels:
+          service: 'kafka-power-bi-bridge'
+          component: 'application'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
+
+  # Database checks
+  - job_name: 'database-connectivity'
+    metrics_path: /probe
+    params:
+      module: [tcp_connect]
+    static_configs:
+      - targets:
+        - 'transactions-database:5432'
+        labels:
+          service: 'postgresql'
+          component: 'database'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
+
+  # Hazelcast checks
+  - job_name: 'hazelcast-health'
+    metrics_path: /probe
+    params:
+      module: [http_2xx]
+    static_configs:
+      - targets:
+        - 'hazelcast-management-center:8080'
+        labels:
+          service: 'hazelcast-dashboard'
+          component: 'hazelcast'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
+
+  - job_name: 'hazelcast-tcp'
+    metrics_path: /probe
+    params:
+      module: [tcp_connect]
+    static_configs:
+      - targets:
+        - 'hazelcast-kafka:5701'
+        labels:
+          service: 'hazelcast-kafka'
+          component: 'hazelcast'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
