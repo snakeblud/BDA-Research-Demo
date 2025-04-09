@@ -1,10 +1,9 @@
 global:
   smtp_smarthost: 'smtp.gmail.com:587'
-  smtp_from: ''
-  smtp_auth_username: ''
-  smtp_auth_password: ''
+  smtp_from: 'ahkowrtan1234@gmail.com'
+  smtp_auth_username: 'ahkowrtan1234@gmail.com'
+  smtp_auth_password: 'owis plud wrpc qjdg'
   smtp_require_tls: true
-
 route:
   group_by: ['alertname']
   group_wait: 30s
@@ -23,7 +22,7 @@ route:
 receivers:
   - name: 'default-team'
     email_configs:
-      - to: ''
+      - to: 'clwt1997@outlook.com'
         send_resolved: true
 
   - name: 'kafka-team'
