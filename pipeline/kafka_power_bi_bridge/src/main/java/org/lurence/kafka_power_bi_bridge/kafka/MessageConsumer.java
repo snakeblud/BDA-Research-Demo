@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+import io.micrometer.core.instrument.MeterRegistry;
+import io.micrometer.core.instrument.Counter;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,9 +27,29 @@ public class MessageConsumer {
 
     private final static int MAX_TRANSACTIONS = 1000;
 
+    // ✅ Micrometer counters
+    private final Counter successCounter;
+    private final Counter failureCounter;
+    private final Counter amountCounter;
+
     @Autowired
-    public MessageConsumer(KafkaMetricsConfig metricsConfig) {
+    public MessageConsumer(KafkaMetricsConfig metricsConfig, MeterRegistry registry) {
         this.metricsConfig = metricsConfig;
+
+        // Micrometer counters
+        this.successCounter = Counter.builder("transactions_total")
+                .tag("status", "success")
+                .description("Total successful transactions")
+                .register(registry);
+
+        this.failureCounter = Counter.builder("transactions_total")
+                .tag("status", "failure")
+                .description("Total failed transactions")
+                .register(registry);
+
+        this.amountCounter = Counter.builder("transactions_amount_sum")
+                .description("Sum of transaction amounts")
+                .register(registry);
     }
 
     @KafkaListener(topics = "powerbi-stream", groupId = "power_bi_consumer_group")
@@ -34,24 +57,28 @@ public class MessageConsumer {
         try {
             System.out.println("Received raw message: " + record.value());
 
-            // Handle Struct format (from Debezium/Hazelcast)
             String value = record.value();
             if (value.startsWith("Struct")) {
-                // Handle Struct format by parsing it manually
+                // Handle Struct format
                 Map<String, Object> structData = parseStructMessage(value);
                 recentMessages.add(structData);
                 System.out.println("Processed Struct message: " + structData);
 
-                // Increment the messages processed counter
+                // Increment metrics
                 metricsConfig.incrementMessagesProcessed();
+                successCounter.increment();
+                if (structData.containsKey("amount")) {
+                    try {
+                        double amt = Double.parseDouble(structData.get("amount").toString());
+                        amountCounter.increment(amt);
+                    } catch (NumberFormatException ignored) {}
+                }
                 return;
             }
 
-            // Try to parse as JSON if it's not a Struct
             try {
                 JsonNode valueNode = objectMapper.readTree(value);
 
-                // Check if it has Debezium format with before/after/op fields
                 if (valueNode.has("op")) {
                     String operationType = valueNode.get("op").asText();
                     JsonNode after = valueNode.get("after");
@@ -62,15 +89,31 @@ public class MessageConsumer {
                         Map<String, Object> data = jsonNodeToMap(after);
                         recentMessages.add(data);
                         System.out.println("Processed message: " + data);
+
+                        // ✅ Increment counters
+                        successCounter.increment();
+                        if (data.containsKey("amount")) {
+                            try {
+                                double amt = Double.parseDouble(data.get("amount").toString());
+                                amountCounter.increment(amt);
+                            } catch (NumberFormatException ignored) {}
+                        }
                     }
                 } else {
-                    // Just a regular JSON object
                     Map<String, Object> data = objectMapper.readValue(value, new TypeReference<Map<String, Object>>() {});
                     recentMessages.add(data);
                     System.out.println("Processed JSON message: " + data);
+
+                    // ✅ Increment counters
+                    successCounter.increment();
+                    if (data.containsKey("amount")) {
+                        try {
+                            double amt = Double.parseDouble(data.get("amount").toString());
+                            amountCounter.increment(amt);
+                        } catch (NumberFormatException ignored) {}
+                    }
                 }
 
-                // Increment the messages processed counter
                 metricsConfig.incrementMessagesProcessed();
             } catch (JsonProcessingException e) {
                 System.err.println("Failed to parse as JSON, treating as plain text: " + e.getMessage());
@@ -78,7 +121,8 @@ public class MessageConsumer {
                 data.put("message", value);
                 recentMessages.add(data);
 
-                // Increment the messages processed counter
+                // ✅ Treat as failure
+                failureCounter.increment();
                 metricsConfig.incrementMessagesProcessed();
             }
 
@@ -90,25 +134,21 @@ public class MessageConsumer {
             System.err.println("Error processing message: " + e.getMessage());
             e.printStackTrace();
 
-            // Increment the error counter
+            // Increment error metrics
             metricsConfig.incrementErrors();
+            failureCounter.increment();
         }
     }
 
     private Map<String, Object> parseStructMessage(String structMessage) {
         Map<String, Object> result = new HashMap<>();
-
-        // Basic parsing of Struct format - this is a simplified version
-        // Example: Struct{field1=value1,field2=value2}
         try {
-            // Extract content between Struct{ and }
             int startIndex = structMessage.indexOf("{");
             int endIndex = structMessage.lastIndexOf("}");
 
             if (startIndex != -1 && endIndex != -1 && endIndex > startIndex) {
                 String content = structMessage.substring(startIndex + 1, endIndex);
 
-                // Split by commas, but be careful about commas inside quotes
                 boolean inQuotes = false;
                 StringBuilder currentPart = new StringBuilder();
                 List<String> parts = new ArrayList<>();
@@ -126,19 +166,16 @@ public class MessageConsumer {
                     }
                 }
 
-                // Add the last part
                 if (currentPart.length() > 0) {
                     parts.add(currentPart.toString());
                 }
 
-                // Parse each field=value pair
                 for (String part : parts) {
                     String[] keyValue = part.split("=", 2);
                     if (keyValue.length == 2) {
                         String key = keyValue[0].trim();
                         String value = keyValue[1].trim();
 
-                        // Remove quotes from value if present
                         if (value.startsWith("\"") && value.endsWith("\"")) {
                             value = value.substring(1, value.length() - 1);
                         }
@@ -149,13 +186,10 @@ public class MessageConsumer {
             }
         } catch (Exception e) {
             System.err.println("Error parsing Struct message: " + e.getMessage());
-            // Fallback - store the raw message
             result.put("raw_message", structMessage);
-
-            // Increment the error counter
             metricsConfig.incrementErrors();
+            failureCounter.increment();
         }
-
         return result;
     }
 

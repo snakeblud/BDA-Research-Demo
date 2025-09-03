@@ -761,6 +761,152 @@
       ],
       "title": "Hazelcast Response Time",
       "type": "timeseries"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 36
+      },
+      "id": 30,
+      "panels": [],
+      "title": "Business KPIs",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_PROMETHEUS}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 0,
+        "y": 37
+      },
+      "id": 31,
+      "options": {
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "expr": "rate(transactions_total{status=\"success\"}[1m])",
+          "legendFormat": "Success",
+          "refId": "A"
+        }
+      ],
+      "title": "Transactions per Minute (Success)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_PROMETHEUS}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 8,
+        "y": 37
+      },
+      "id": 32,
+      "options": {
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "expr": "rate(transactions_total{status=\"failure\"}[1m])",
+          "legendFormat": "Failure",
+          "refId": "A"
+        }
+      ],
+      "title": "Transactions per Minute (Failure)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_PROMETHEUS}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 16,
+        "y": 37
+      },
+      "id": 33,
+      "options": {
+        "legend": {
+          "showLegend": true
+        }
+      },
+      "targets": [
+        {
+          "expr": "increase(transactions_amount_sum_total[5m])",
+          "legendFormat": "Revenue (last 5m)",
+          "refId": "A"
+        }
+      ],
+      "title": "Revenue Trend",
+      "type": "timeseries"
+    },
+    {
+      "title": "Total Successful Transactions",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "transactions_total{status=\"success\"}",
+          "legendFormat": "Total Success",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "Kafka Messages Processed",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "kafka_consumer_messages_processed_total",
+          "legendFormat": "Messages",
+          "refId": "A"
+        }
+      ]
     }
   ],
   "refresh": "10s",
@@ -800,3 +946,4 @@
   "version": 1,
   "weekStart": ""
 }
+

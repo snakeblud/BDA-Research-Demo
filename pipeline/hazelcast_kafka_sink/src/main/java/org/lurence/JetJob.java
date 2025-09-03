@@ -18,6 +18,7 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
+import com.hazelcast.jet.config.ProcessingGuarantee;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Collections;
@@ -86,13 +87,15 @@ public class JetJob {
 
         JobConfig cfg = new JobConfig()
                 .setName("kafka-traffic-monitor")
-                .addClass(JetJob.class);
+                .addClass(JetJob.class)
+                .setProcessingGuarantee(ProcessingGuarantee.EXACTLY_ONCE)
+                .setSnapshotIntervalMillis(10_000);
 
         try {
-            hz.getJet().newJob(p, cfg);
-            System.out.println("Job Config Complete!");
+            hz.getJet().newJobIfAbsent(p, cfg);
+            System.out.println("✅ Jet Job started and will stay running!");
         } catch (Exception e) {
-            System.err.println("Error starting Jet job: " + e.getMessage());
+            System.err.println("❌ Error starting Jet job: " + e.getMessage());
             e.printStackTrace();
         }
     }
