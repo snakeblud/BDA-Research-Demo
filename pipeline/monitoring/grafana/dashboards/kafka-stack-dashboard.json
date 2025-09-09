@@ -907,6 +907,17 @@
           "refId": "A"
         }
       ]
+    },
+    {
+      "title": "High-Value Transactions",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "transactions_high_value_total",
+          "legendFormat": "High Value Transactions",
+          "refId": "A"
+        }
+      ]
     }
   ],
   "refresh": "10s",
