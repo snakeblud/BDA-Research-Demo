@@ -60,4 +60,4 @@ The system consists of several interconnected components:
 1. Clone the repository:
    ```bash
    git clone [repository-url]
-   cd IS484
+   cd BDA-Research-Demo
