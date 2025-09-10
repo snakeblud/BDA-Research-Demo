@@ -7,7 +7,7 @@ This project implements a real-time data analytics platform for REDACTED that en
 The platform provides real-time monitoring and analytics capabilities including:
 - Real-time CDC ingestion (Postgres → Debezium → Kafka)
 - Kafka consumption & metrics: processed messages, success/failure counts, amount totals
-- Stream ETL: Hazelcast filters transactions (e.g., high-value >1000 vs normal)
+- Stream ELT: Hazelcast classifies transactions (e.g., high-value >1000 vs normal) downstream after loading
 - Service health & latency dashboards (Prometheus/Grafana/Blackbox)
 - [Roadmap] Streaming analytics in Hazelcast (fraud detection, rolling KPIs)
 
@@ -31,7 +31,7 @@ The system consists of several interconnected components:
     - Manages backpressure
 
 4. **Stream Processing (Hazelcast)**
-    - Reads from Kafka, applies ETL logic (e.g., parsing, filtering, enrichment)
+    - Reads from Kafka, applies ELT logic (e.g., parsing, filtering, enrichment)
     - Separates **high-value transactions (>1000)** from normal ones
     - Forwards processed data into a downstream Kafka topic (`powerbi-stream`)
 
@@ -106,9 +106,7 @@ To run and demo the pipeline end-to-end:
 
 3. **Verify Kafka messages**
    ```bash
-   docker exec -it pipeline-kafka-1 \
-     kafka-console-consumer --bootstrap-server kafka:9092 \
-     --topic is484.public.tbank_cleaned --from-beginning --max-messages 5
+   docker exec -it pipeline-kafka-1      kafka-console-consumer --bootstrap-server kafka:9092      --topic is484.public.tbank_cleaned --from-beginning --max-messages 5
    ```
 
 4. **Check metrics endpoints**
@@ -137,8 +135,11 @@ To run and demo the pipeline end-to-end:
 
 ### Notes & Roadmap
 
-- Hazelcast is now performing **ETL-style stream processing** (classification, filtering).
-- This can be extended for real-time fraud detection, aggregations, or complex event processing.
+- This pipeline follows an **ELT pattern**:  
+  - **Extract & Load** → Debezium + Kafka move raw changes into Kafka.  
+  - **Transform** → Hazelcast Jet and the Spring Boot consumer apply classification and aggregations downstream.  
+- Hazelcast is now performing **ELT-style stream processing** (classification, filtering).  
+- This can be extended for real-time fraud detection, aggregations, or complex event processing.  
 - This setup simulates a real-time banking analytics pipeline but can be expanded for production use.
 
 ---
